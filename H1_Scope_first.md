@@ -75,6 +75,18 @@ Soveltamisalan ulkopuolelle rajataan muiden henkilöiden, kuten tyttöystävän 
 
 ## Tehtävä: Tunnista vähintään 2 interested party -tahoa kotiverkkokontekstissa ja kirjoita kullekin:
 
+Tehtävää varten etsin tietoa kurssin moodlesta löytyviltä ISO tiedostoista: https://hhmoodle.haaga-helia.fi/course/view.php?id=45171&section=1 
+
+Tehtävää varten käytin Excel pohjaa mihin täytin tarvittavat tiedot ja valitsin esimerkkisidosryhmiksi:
+- Minä itse (harjoitusten jatkuvuus)
+- Kurssinjärjestäjä (ei haitallista toimintaa verkossa)
+
+Suomen standardisoimisliiton SFS ISO/IEC 27001:2023 mukaan viittasin omiin valittuihin sidosryhmiin:
+
+
+
+
+
 
 
 ## Lähteet 
