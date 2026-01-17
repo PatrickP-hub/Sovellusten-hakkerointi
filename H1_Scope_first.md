@@ -58,7 +58,13 @@
  
 ### Scope-teksti
 
+Tehtävän soveltamisalaan kuuluu oma kotona käytettävä IT-ympäristö. Kotiverkon perusinfrastruktuuriin kuuluu langaton verkkoyhteys, jossa on käytössä ASUS PCE-N15 reititin sekä Elisan tarjoama 4G 100 Mbit internet yhtyes. Erillistä palomuuri laitteita ole, vaan suojaus perustuu laitteiden omien käyttöjärjestelmien palomuureihin. Muita IoT- laitteita ei ole käytössä.
 
+Kurssiharjoituksiin käytettäviin laitteisiin kuuluu pöytäkone, jota käytän pääasiallisena työasemana kotitehtävien ja harjoitusten tekemiseen, sekä läppäri koulukäyttöön rajallisemmilla ominaisuuksilla. Työasemalla ajetaan virtuaalikoneita Oracle VirtualBox ympäristössä. Harjoituspalvelimena toimii Linux virtuaalikone, jossa käyttöjärjestelmänä on palvelinten hallinta kurssilta ladattu Debian 13 Trixie. Sitä myös käytetään komentorivityöskentelyyn ja luultavasti kurssin harjoituksiin. 
+
+Soveltamisalaan kuuluvat myös kurssiin liittyvät tiedot. Näitä ovat verkkosivulla oleva Applicaton Hacking verkkosivun materiaali, Haaga Helia moodlen kurssisivut sekä Tero Karvisen kurssitehtävät ja Laksu palautuksien ristiinarvioinnit. Muistiinpanot tallennetaan Microsoft Word tiedostoihin tai notepadiin. Kurssitehtävät ja raportit tallennetaan GitHub - Sovellusten hakkerointi repositioon. Lisäksi soveltamisalaan kuuluvat tunnistetiedot kuten Moodlen ja OneDriven MFA-varmenteet, Githubiin liittyvät SSH-avaimet sekä kurssialustojen käyttäjätunnukset ja salasanat.
+
+Soveltamisalan ulkopuolelle rajataan muiden henkilöiden, kuten tyttöystävän älylaitteet, koska ne eivät ole omassa omistuksessa tai hallinnassa. Myös pilvipalveluiden taustalla oleva infrastruktuuri rajataan ulos, koska niiden tietoturvasta vastaavat palveluntarjoajat. Elisan verkko internetin puolella sekä muut älylaitteet rajataan pois, koska ne eivät ole merkityksellisiä kurssin näkökulmasta ja niihin liittyvät riskit on tiedostettu.
 
 ## b) Sidotaan Standardiin
 
