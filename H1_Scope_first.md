@@ -11,7 +11,7 @@
 ### 1. Mitä kuuluu soveltamisalaan
 
 - Kotiverkon perusinfra: 
-  - ASUS PCE-N15 11n Wireless LAN  
+  - TP link Wireless LAN  
   - Ei erillistä palomuurta (Windowsin palomuuri)
   - Elisa 4G 100mbit
   - Ei muita relevantteja IoT laitteita
@@ -53,12 +53,12 @@
 
 - Toimittajat:
   - ISP on Elisa, joka on taloyhtiön kanssa sovittu asuntoon ja sieltä suoraan reitittimeen.
-  - Laitetoimittajina: ASUS, ACER, ja itsekoottu kone missä erilaisia laitetoimittajia kuten Nvidia, Gigabyte ja Amd.
+  - Laitetoimittajina: ACER, ja itsekoottu kone missä erilaisia laitetoimittajia kuten Nvidia, Gigabyte ja Amd.
   - Pilvipalvelutarjoajina ovat Microsoft, Github ja LMS:nä toimii Haaga Helia moodle
  
 ### Scope-teksti
 
-Tehtävän soveltamisalaan kuuluu oma kotona käytettävä IT-ympäristö. Kotiverkon perusinfrastruktuuriin kuuluu langaton verkkoyhteys, jossa on käytössä ASUS PCE-N15 reititin sekä Elisan tarjoama 4G 100 Mbit internet yhtyes. Erillistä palomuuri laitteita ole, vaan suojaus perustuu laitteiden omien käyttöjärjestelmien palomuureihin. Muita IoT- laitteita ei ole käytössä.
+Tehtävän soveltamisalaan kuuluu oma kotona käytettävä IT-ympäristö. Kotiverkon perusinfrastruktuuriin kuuluu langaton verkkoyhteys, jossa on käytössä TP-Link reititin sekä Elisan tarjoama 4G 100 Mbit internet yhtyes. Erillistä palomuuri laitteita ole, vaan suojaus perustuu laitteiden omien käyttöjärjestelmien palomuureihin. Muita IoT- laitteita ei ole käytössä.
 
 Kurssiharjoituksiin käytettäviin laitteisiin kuuluu pöytäkone, jota käytän pääasiallisena työasemana kotitehtävien ja harjoitusten tekemiseen, sekä läppäri koulukäyttöön rajallisemmilla ominaisuuksilla. Työasemalla ajetaan virtuaalikoneita Oracle VirtualBox ympäristössä. Harjoituspalvelimena toimii Linux virtuaalikone, jossa käyttöjärjestelmänä on palvelinten hallinta kurssilta ladattu Debian 13 Trixie. Sitä myös käytetään komentorivityöskentelyyn ja luultavasti kurssin harjoituksiin. 
 
@@ -81,10 +81,13 @@ Tehtävää varten käytin Excel pohjaa mihin täytin tarvittavat tiedot ja vali
 - Minä itse (harjoitusten jatkuvuus)
 - Kurssinjärjestäjä (ei haitallista toimintaa verkossa)
 
-Suomen standardisoimisliiton SFS ISO/IEC 27001:2023 mukaan viittasin omiin valittuihin sidosryhmiin:
+käytin apuna tehtävässä Suomen standardisoimisliiton SFS ISO/IEC 27001:2023.pdf tiedostoa ja tein niistä taulukon Exceliin
 
+<img width="596" height="416" alt="image" src="https://github.com/user-attachments/assets/71364fda-5411-4395-bbfc-4a378a89f9ea" />
 
+Valitsin vaatimusalueiksi "suunnittelun" ja "toiminnan" ja osoitin niiden täyttymisen. 
 
+Tehtävien tekemisessä meni noin 5tuntia aikaa kokonaisuudessaan ja materiaaleja tuli silmäiltyä paljon.
 
 
 
@@ -92,6 +95,8 @@ Suomen standardisoimisliiton SFS ISO/IEC 27001:2023 mukaan viittasin omiin valit
 ## Lähteet 
 
 Sovellusten hakkerointi: https://hhmoodle.haaga-helia.fi/course/view.php?id=45171&section=1#tabs-tree-start
+
+Suomen standardisoimisliitto SFS: ISO27001-2023-fi.pdf
 
 
 
