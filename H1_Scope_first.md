@@ -11,7 +11,7 @@
 ### 1. Mitä kuuluu soveltamisalaan
 
 - Kotiverkon perusinfra: 
-  - TP link Wireless LAN  
+  - TP-link Archer reititin 
   - Ei erillistä palomuurta (Windowsin palomuuri)
   - Elisa 4G 100mbit
   - Ei muita relevantteja IoT laitteita
@@ -58,7 +58,7 @@
  
 ### Scope-teksti
 
-Tehtävän soveltamisalaan kuuluu oma kotona käytettävä IT-ympäristö. Kotiverkon perusinfrastruktuuriin kuuluu langaton verkkoyhteys, jossa on käytössä TP-Link reititin sekä Elisan tarjoama 4G 100 Mbit internet yhtyes. Erillistä palomuuri laitteita ole, vaan suojaus perustuu laitteiden omien käyttöjärjestelmien palomuureihin. Muita IoT- laitteita ei ole käytössä.
+Tehtävän soveltamisalaan kuuluu oma kotona käytettävä IT-ympäristö. Kotiverkon perusinfrastruktuuriin kuuluu langaton verkkoyhteys, jossa on käytössä TP-Link Archer reititin sekä Elisan tarjoama 4G 100 Mbit internet yhteys. Erillistä palomuuri laitteita ole, vaan suojaus perustuu laitteiden omien käyttöjärjestelmien palomuureihin. Muita IoT- laitteita ei ole käytössä.
 
 Kurssiharjoituksiin käytettäviin laitteisiin kuuluu pöytäkone, jota käytän pääasiallisena työasemana kotitehtävien ja harjoitusten tekemiseen, sekä läppäri koulukäyttöön rajallisemmilla ominaisuuksilla. Työasemalla ajetaan virtuaalikoneita Oracle VirtualBox ympäristössä. Harjoituspalvelimena toimii Linux virtuaalikone, jossa käyttöjärjestelmänä on palvelinten hallinta kurssilta ladattu Debian 13 Trixie. Sitä myös käytetään komentorivityöskentelyyn ja luultavasti kurssin harjoituksiin. 
 
