@@ -66,6 +66,11 @@ Soveltamisalaan kuuluvat myös kurssiin liittyvät tiedot. Näitä ovat verkkosi
 
 Soveltamisalan ulkopuolelle rajataan muiden henkilöiden, kuten tyttöystävän älylaitteet, koska ne eivät ole omassa omistuksessa tai hallinnassa. Myös pilvipalveluiden taustalla oleva infrastruktuuri rajataan ulos, koska niiden tietoturvasta vastaavat palveluntarjoajat. Elisan verkko internetin puolella sekä muut älylaitteet rajataan pois, koska ne eivät ole merkityksellisiä kurssin näkökulmasta ja niihin liittyvät riskit on tiedostettu.
 
+### Kuva verkkoinfrastuktuurista
+
+<img width="1094" height="311" alt="image" src="https://github.com/user-attachments/assets/8be1f3cb-b2eb-4d7e-a620-70d1a81b573e" />
+
+
 ## b) Sidotaan Standardiin
 
 ## Tehtävä: Tunnista vähintään 2 interested party -tahoa kotiverkkokontekstissa ja kirjoita kullekin:
