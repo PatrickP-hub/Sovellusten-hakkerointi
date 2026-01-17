@@ -34,8 +34,31 @@
 
 ### 2. Mitä rajaat ulos ja miksi
 
+- Ulosrajaukset:
+  - Tyttöystävän älylaitteet rajataan ulos koska ne ei ole omistuksissani
+  - Pilvipalveluiden tarjoajat koska ne ovat vastuussa palveluiden turvallisuudesta
+  - Elisan verkko: Palveluntarjoaja hoitaa hommat
+  - Muita älylaitteita ovat merkityksettömiä kurssille ja niiden riskit on tiedostettu
+  
 
 ### 3. Keskeiset rajapinnat
+
+- Pilvipalvelut:
+  - GitHub, Microsoft OneDrive ja Haaga Helia moodle käytössä kurssin aikana 
+
+- Etäyhteydet:
+  - VPN (Surf shark käytössä mobiililaitteella välillä)
+  - SSH muunmuassa Github linkitykseen ja virtuaalikone komentorivityöskentelyyn
+  - Kotiverkon ja internetin välinen raja on reitittimessä, reititin on päivitetty ja se vastaa liikenteen suodatuksesta
+
+- Toimittajat:
+  - ISP on Elisa, joka on taloyhtiön kanssa sovittu asuntoon ja sieltä suoraan reitittimeen.
+  - Laitetoimittajina: ASUS, ACER, ja itsekoottu kone missä erilaisia laitetoimittajia kuten Nvidia, Gigabyte ja Amd.
+  - Pilvipalvelutarjoajina ovat Microsoft, Github ja LMS:nä toimii Haaga Helia moodle
+ 
+### Scope-teksti
+
+
 
 ## b) Sidotaan Standardiin
 
