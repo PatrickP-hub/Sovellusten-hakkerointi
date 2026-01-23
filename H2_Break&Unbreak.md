@@ -3,9 +3,9 @@
 ## Toimintaympäristö
 
 Aloitin tehtävän tekemisen noin klo 13 23.1.2026 pöytäkoneellani jossa spekseinä
-Windows 11 64-bit
-16gt ram
-amd ryzen 5 prosessori
+- Windows 11 64-bit
+- 16gt ram
+- amd ryzen 5 prosessori
 
 ## x) Read/watch/listen and summarize.
 
