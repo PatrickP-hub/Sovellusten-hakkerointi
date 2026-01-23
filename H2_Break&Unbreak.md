@@ -172,7 +172,21 @@ Tämä tehtävä oli paljon yksinkertaisempi kuin edellinen eikä mennyt onneksi
 
 Sitten menin korjaamaan virhettä `nano manage.py` jonka löysin katsomalla komentorivillä ls siinä kansiossa missä tein äsköisen tehtävän.
 
+En kuitenkaan tiennyt mitä siellä olisi korjattavaa , joten katoin vinkkeihin ja siellä sanottiin että ne löytyvät "views.py" kohdasta 
 
+siirryin `cd hats` ja `nano views.py`
+
+<img width="1286" height="610" alt="image" src="https://github.com/user-attachments/assets/21a037ee-33ed-4eff-b524-eb4cc11b03a1" />
+
+Sitten muokkasin vinkkien mukaan test_func() osiota samaan kuin ylemmässä rivillä eli `self.request.user.is_staff` sillä se puuttui
+
+<img width="926" height="155" alt="image" src="https://github.com/user-attachments/assets/0d624029-257f-4f30-a03c-14612d81342c" />
+
+<img width="654" height="225" alt="image" src="https://github.com/user-attachments/assets/4293cac9-6fa9-4ebb-99c4-114c0f6dc266" />
+
+Ei löytynyt enään! pelkkää forbiddenia
+
+Kello oli 21.30 eli tehtävissä oli mennyt kokonaisuudessaan noin 10tuntia. Lopputuloksena vaikka kaikki eivät menneet oikein pää oli kipeä ja jotain uutta oli taas opittu!
 
 
 ## Lähteet
