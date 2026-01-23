@@ -69,8 +69,11 @@ Kokeilin alkuun URL osoitteeseen `/admin` ei toiminut, sitten kokeilin vielä `'
 
 Sitten tajusin avaa F12 ja muokata suoraan koodia html mitä Tero näytti tunnilta ennen kuin lähettiin kotiin
 
+Vaihdoin type "number" tilalle "text" ja laitoin perään OR 1=1 ja LIMIT 1 OFFSET 2 -- josta sain apua vinkeistä.
 
+<img width="1277" height="531" alt="image" src="https://github.com/user-attachments/assets/55af6c2f-860c-46da-ae70-815c28d96e0c" />
 
+Ja salainen salasana tuli näkyviin.
 
 ## b) Fix the 010-staff-only vulnerability from source code
 
@@ -88,7 +91,7 @@ lopuksi tältä
 
 <img width="586" height="118" alt="image" src="https://github.com/user-attachments/assets/9bb8d137-7a83-40a3-9101-c003e5cdf6ff" />
 
-Ei näkynyt enään salasanaa syöttämällä samaa komentoa
+Ei näkynyt enään salasanaa syöttämällä samaa komentoa 
 
 
 ## c) Solve dirfuzt-1 from the article Karvinen 2023: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/
