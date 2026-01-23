@@ -67,7 +67,9 @@ Menin osoitteeseen http://127.0.0.1:5000 annoin pin koodin `123` sain salasanaks
 
 Kokeilin alkuun URL osoitteeseen `/admin` ei toiminut, sitten kokeilin vielä `' OR 1=1 --` mutta sekään ei toiminut
 
-Tämän jälkeen etsin tietoa ja tipsit sekä mietin miten pääsisin eteenpäin noin kahden tunnin verran, joten siirryin eteenpäin vaikka yritin katsoa tietoa vinkeistä.
+Sitten tajusin avaa F12 ja muokata suoraan koodia html mitä Tero näytti tunnilta ennen kuin lähettiin kotiin
+
+
 
 
 ## b) Fix the 010-staff-only vulnerability from source code
@@ -86,7 +88,7 @@ lopuksi tältä
 
 <img width="586" height="118" alt="image" src="https://github.com/user-attachments/assets/9bb8d137-7a83-40a3-9101-c003e5cdf6ff" />
 
-En ollut varma oliko tämä oikein kun en saanut tehtävässä a) näkyviin myöskään "superadminin" salasanaa
+Ei näkynyt enään salasanaa syöttämällä samaa komentoa
 
 
 ## c) Solve dirfuzt-1 from the article Karvinen 2023: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/
@@ -129,6 +131,8 @@ Latasin vielä toisen "dirfutz-1" tiedoston ja tein samat asiat mitä edellisiss
 
 
 ## d) Break into 020-your-eyes-only: https://terokarvinen.com/hack-n-fix/
+
+Sitten oli seuraavana päästä admin access consoleen vaikka näiden tehtävien pariin oli kulunut jo noin 7tuntia kokonaisuudessaan. 
 
 
 
