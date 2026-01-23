@@ -137,9 +137,41 @@ Latasin vielä toisen "dirfutz-1" tiedoston ja tein samat asiat mitä edellisiss
 
 Sitten oli seuraavana päästä admin access consoleen vaikka näiden tehtävien pariin oli kulunut jo noin 7tuntia kokonaisuudessaan. 
 
+Annoin komennot jolla siirryin challenges 020 
+
+<img width="384" height="62" alt="image" src="https://github.com/user-attachments/assets/e346fa9e-0ce6-419b-a7fb-b64b477dbb5b" />
+
+sitten latasin virtualenv ja siihe liittyvät paketit
+
+<img width="624" height="91" alt="image" src="https://github.com/user-attachments/assets/bfc5c653-869b-4a7f-b011-0ebb7b0b81a8" />
+
+Sitten vielä aktivaatio
+
+<img width="933" height="25" alt="image" src="https://github.com/user-attachments/assets/7a782c4b-0370-4de8-8a6e-81401bf580bc" />
+
+Tämän jälkeen varmistin että tekstitiedosto oli ja sehän oli ja sitten installoin oikean version
+
+ja navigoin `cd logtin/` ja päivitin tietokannan
+
+`./manage.py makemigrations; ./manage.py migrate`
+
+Sitten annoin komennon `./manage.py runserver` ja menin http osoitteeseen tälle sivustolle
+
+<img width="1281" height="576" alt="image" src="https://github.com/user-attachments/assets/d0545b07-0f80-4885-b07d-cf0e631533c4" />
+
+Rekisteröin ja kirjauduin sisään mutta en päässyt vielä salaista sivua. 
+
+Sitten kokeilin URL:iin lisätä admin se ei toiminut sitten admin-console sillä tehtävä sitä pyysi ja näköjään pääsin salaiselle sivustolle!
+
+<img width="1284" height="468" alt="image" src="https://github.com/user-attachments/assets/662415a2-9041-48f3-893f-d4e23f3fe808" />
+
+Tämä tehtävä oli paljon yksinkertaisempi kuin edellinen eikä mennyt onneksi tunteja aikaa.
 
 
 ## e) Fix the 020-your-eyes-only vulnerability
+
+Sitten menin korjaamaan virhettä `nano manage.py` jonka löysin katsomalla komentorivillä ls siinä kansiossa missä tein äsköisen tehtävän.
+
 
 
 
