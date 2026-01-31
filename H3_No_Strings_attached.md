@@ -44,11 +44,21 @@ Tässä siis alkuperäinen nano tiedosto.
 
 Tehtävänannossa suositeltiin XOR-obfuskointia, joka oli minulle aivan uusi termi. Etsin tietoa netistä obfuskoinnista, ja myös tapoja millä saisi salasanan piilotettua ettei se näkyisi selväkielisenä binäärissä.
 
-Kysyin myös ChatGPT tekoälyltä apua c kielellä obfuskointiin. Sain sen verran apua että 
+Kysyin myös ChatGPT tekoälyltä apua c kielellä obfuskointiin. Tässä siis salasana on muutettu ja se puretaan ajonaikana.
 
+<img width="1796" height="1390" alt="image" src="https://github.com/user-attachments/assets/677d7cfa-97b3-424c-8289-9183f6bd927a" />
 
+Koodissa siis salasana on piilotettu muuttamalla normaalikirjaimet obfuskaamalla eli piilottamalla "0x muotoon"
+
+Sitten oli aika testata tuleeko salasana enään näkyviin komennolla `./passtr`
+
+<img width="898" height="64" alt="image" src="https://github.com/user-attachments/assets/dbbac5e7-b39d-4512-9c23-2c84358a0327" />
+
+Ei tullut enään, joten obfuskointi näytti toimivan. Tässä tehtävässä kesti kuitenkin aikaa keksiä miten muutan selkokielisen salasanan piilotettuihin kirjaimiin. 
 
 ## c) Packd
+
+
 
 ## Lähteet
 
