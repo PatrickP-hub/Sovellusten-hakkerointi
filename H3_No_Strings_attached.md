@@ -40,6 +40,12 @@ Etsin tiedoston `ls` komennolla ja löysin passtr.c tiedoston jota pääsin muok
 
 <img width="901" height="383" alt="image" src="https://github.com/user-attachments/assets/15646ea7-409f-4d0f-a134-8daf01047359" />
 
+Tässä siis alkuperäinen nano tiedosto.
+
+Tehtävänannossa suositeltiin XOR-obfuskointia, joka oli minulle aivan uusi termi. Etsin tietoa netistä obfuskoinnista, ja myös tapoja millä saisi salasanan piilotettua ettei se näkyisi selväkielisenä binäärissä.
+
+Kysyin myös ChatGPT tekoälyltä apua c kielellä obfuskointiin. Sain sen verran apua että 
+
 
 
 ## c) Packd
