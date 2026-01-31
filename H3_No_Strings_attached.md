@@ -43,7 +43,7 @@ Etsin tiedoston `ls` komennolla ja löysin passtr.c tiedoston jota pääsin muok
 
 Tässä siis alkuperäinen nano tiedosto.
 
-Tehtävänannossa suositeltiin XOR-obfuskointia, joka oli minulle aivan uusi termi. Etsin tietoa netistä obfuskoinnista, ja myös tapoja millä saisi salasanan piilotettua ettei se näkyisi selväkielisenä binäärissä.
+Tehtävänannossa suositeltiin XOR-obfuskointia, joka oli minulle aivan uusi termi. Etsin tietoa netistä obfuskoinnista, ja myös tapoja millä saisi salasanan piilotettua ettei se näkyisi selväkielisenä binäärissä. Täältä löysin jotain vinkkejä: https://www.threatdown.com/blog/nowhere-to-hide-three-methods-of-xor-obfuscation/
 
 Kysyin myös ChatGPT tekoälyltä apua c kielellä obfuskointiin. Tässä siis salasana on muutettu ja se puretaan ajonaikana.
 
@@ -84,12 +84,14 @@ Tässä vielä kuvat lipusta ja salasanasta:
 
 <img width="653" height="35" alt="image" src="https://github.com/user-attachments/assets/abfb9669-3b63-4f48-9bf8-f2f7ad08ce21" />
 
-Minusta tämä jälkimmäinen tehtävä oli paljon selkeämpi ja helpompi kuin b) kohdan tehtävä. Tehtävää tehdessä myös huomasi että Linux:in komentorivin käyttö alkoi tuntua jo paljon sulavammalta ja peruskomennot tulivat ulkoimuistista. 
+Minusta tämä jälkimmäinen tehtävä oli paljon selkeämpi ja helpompi kuin b) kohdan tehtävä. Tehtävää tehdessä myös huomasi että Linux:in komentorivin käyttö alkoi tuntua jo paljon sulavammalta ja peruskomennot tulivat ulkoimuistista. Tehtävätkin oli myös kivoja ja mielestäni opin paljon uutta. 
 
 
 ## Lähteet
 
 Sovellusten hakkerointi: https://terokarvinen.com/application-hacking/ 
+
+Nowhere to Hide: Three methods of XOR obfuscation: https://www.threatdown.com/blog/nowhere-to-hide-three-methods-of-xor-obfuscation/
 
 
 
