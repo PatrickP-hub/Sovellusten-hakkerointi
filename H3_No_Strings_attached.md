@@ -4,9 +4,10 @@
 
 - Oracle VirtualBox
 - Linux Debian 13 trixie
+- Firefox
 - Macbook Air M2
 
-Aloitin tehtävänän 31.1 klo 8.30 ja tein tehtävän läppärilläni, sillä en olin reissussa eikä normaali työasemaa ollut käytössä.
+Aloitin tehtävänän 31.1 klo 8.30 ja tein tehtävän läppärilläni, sillä olin reissussa eikä normaali työasemaa (pöytäkone) ollut käytettävissä.
 
 ## a) Strings.
 
@@ -58,6 +59,32 @@ Ei tullut enään, joten obfuskointi näytti toimivan. Tässä tehtävässä kes
 
 ## c) Packd
 
+Aluksi latasin toisen zip paketin Teron sivuilta: https://terokarvinen.com/application-hacking/ 
+
+Sitten toin samanlailla zip paketin virtuaalikoneelle kuin a) tehtävässä. Siirryin kansioon challenges ja sieltä kansioon packd `cd` komennolla.
+
+Kokeilin aluksi samaa kuin edellisessä tehtävässä käyttäen `strings packd` komentoa. 
+
+<img width="1796" height="186" alt="image" src="https://github.com/user-attachments/assets/36a579e5-6a9b-4386-9d48-d12811d0a91c" />
+
+Tässä kohdassa tuli kuitenkin epäonnistunut tuloste sillä tehtävässä tarvitaan UPX:ää.
+
+Latasin tarvittavan paketin `sudo apt install upx-ucl` tämän jälkeen purin vielä pakatun binäärin
+`upx -d packd`
+
+<img width="898" height="181" alt="image" src="https://github.com/user-attachments/assets/5ec07057-e484-4211-b9fa-9c2614b76c2a" />
+
+Ja kokeilin uudestaan komentoa `strings packd`
+
+<img width="898" height="375" alt="image" src="https://github.com/user-attachments/assets/1bafb7ca-8270-4da3-a759-5de42d49c552" />
+
+Komento toimi, lippu ja salasana tulivat näkyviin. Tehtävää ajatellen onneksi katsoin mitä tulosteessa luki ja tajusin heti ladata UPX paketin, koska ilman sitä tehtävään olisi voinut mennä ikuisuus. 
+
+Tässä vielä kuvat lipusta ja salasanasta:
+
+<img width="653" height="35" alt="image" src="https://github.com/user-attachments/assets/abfb9669-3b63-4f48-9bf8-f2f7ad08ce21" />
+
+Minusta tämä jälkimmäinen tehtävä oli paljon selkeämpi ja helpompi kuin b) kohdan tehtävä. Tehtävää tehdessä myös huomasi että Linux:in komentorivin käyttö alkoi tuntua jo paljon sulavammalta ja peruskomennot tulivat ulkoimuistista. 
 
 
 ## Lähteet
