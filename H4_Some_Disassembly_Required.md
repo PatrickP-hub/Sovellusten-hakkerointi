@@ -103,9 +103,15 @@ Annoin käyttöoikeudet tiedostolle `chmod +x` uutta exportettua tiedostoa. Tark
 
 <img width="848" height="215" alt="image" src="https://github.com/user-attachments/assets/1323f6b0-6c1a-457c-aac1-134c01cbfb2a" />
 
+Sitten komento `./passtr_muokattu` joka kysyi salasanaa annoin väärän salasanan 
 
-<img width="848" height="215" alt="image" src="https://github.com/user-attachments/assets/924ce400-c62c-4a04-8150-c223ec4f55ab" />
+<img width="775" height="85" alt="image" src="https://github.com/user-attachments/assets/7ef6e4fe-a81c-4f2e-b668-3eede1e904be" />
 
+Toimi! ja sitten kokeillaan vielä oikeaa salasanaa:
+
+<img width="770" height="85" alt="image" src="https://github.com/user-attachments/assets/7f917b7b-f507-47d3-80b8-608d48891d2f" />
+
+Tuloste todistaa että nyt väärä salasana toimi ja oikea ei toiminut.
 
 
 ## d) Nora CrackMe: Compile to binaries Tindall 2023: https://github.com/NoraCodes/crackmes
