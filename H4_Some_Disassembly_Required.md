@@ -10,7 +10,18 @@
 
 ### Hammond 2022: https://www.youtube.com/watch?v=oTD_ki86c9I
 
+- Videossa näytetään, miten käytetään Ghidra ohjelmaa, joka auttaa tutkimaan ohjelmia sisältä päin.
+  
+- Ghidran ohjelman avulla muutetaan binääritiedosto helpommin luettavaan muotoon.
+
+- Tärkeää on tietää koodia mistä etsiä ja mitkä ovat oleellista koodissa.
+  
+
 ### Eagly and Nancy 2020: https://learning.oreilly.com/library/view/the-ghidra-book/9781098125684/xhtml/ch02.xhtml#ch02lev29
+
+- Tekstissä käydään perehdytään myös muihin työkaluihin, joita käytetään binääritiedostojen "reverse engineeringissä"
+
+- Ghidra yhdistää monien tekstissä käytyjen työkalujen ominaisuuksia yhteen ohjelmaan.
 
 
 ## a) Install Ghidra.
