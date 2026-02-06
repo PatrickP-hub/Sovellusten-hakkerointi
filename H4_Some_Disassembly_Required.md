@@ -214,13 +214,7 @@ Yritin ymmärtää mitä `cVar2 = 'p'` tarkoittaa tunnin verran ja tajusin että
 
 <img width="693" height="48" alt="image" src="https://github.com/user-attachments/assets/9b94743f-c820-43d9-aa42-1001548d89a2" />
 
-Oikein!
-
-
-
-
-
-
+En tiedä oliko tämä oikein tehty, mutta lopulta sain oikein niin olen tyytyväinen. Tehtäviin meni aikaa suunnilleen koko päivä aamusta iltaan ja luulen että opin näissä tehtävissä todella paljon Ghidrasta ja muutenkin reverse engineeringistä.
 
 
 ## Lähteet
