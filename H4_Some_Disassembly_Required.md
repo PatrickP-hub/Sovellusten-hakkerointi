@@ -83,6 +83,30 @@ Jos salasana on oikein ohjelma hyväksyy käyttäjän ja jos salasana on vääri
 
 ## c) If backwards. Modify the passtr program's binary
 
+Seuraavana aloitin taas lataamalla zip tiedoston ja purin sen `unzip` sekä varmuudella `upx -d passtr` komennoilla. Sitten pääsin muokkaamaan alkuperäistä c-koodia että käännän ehtolauseen toisinpäin. 
+
+<img width="619" height="287" alt="image" src="https://github.com/user-attachments/assets/97655322-e76e-4bc2-92da-49577c7384c2" />
+
+Etsin tietoa netistä miten voisin vaihtaa suoraan koodista ehtolausetta jotta salasana hyväksyy kaikki vaihtoehdot. Täältä löysin tietoa: https://medium.com/@anandrishav2228/reverse-engineering-for-beginner-0bf9b20542f7 vaihtaa 
+
+`JNZ` -> `JZ`  eli jump if not zero to jump if zero, Patch instruction assemblen avulla. 
+
+<img width="618" height="80" alt="image" src="https://github.com/user-attachments/assets/aced3bcb-56d1-49b8-8c24-63e5fe1676bf" />
+
+<img width="196" height="20" alt="image" src="https://github.com/user-attachments/assets/d9caeace-f263-4ccc-aff8-cab1be778c1e" />
+
+Tämän jälkeen tallensin tiedoston orginal filenä ja menin terminaaliin kokeilemaan toimiiko.
+
+<img width="348" height="216" alt="image" src="https://github.com/user-attachments/assets/2811671d-2cb2-4245-b0cf-6834167df773" />
+
+Annoin käyttöoikeudet tiedostolle `chmod +x` uutta exportettua tiedostoa. Tarkistin löytyykö tiedosto `ls -la`
+
+<img width="848" height="215" alt="image" src="https://github.com/user-attachments/assets/1323f6b0-6c1a-457c-aac1-134c01cbfb2a" />
+
+
+<img width="848" height="215" alt="image" src="https://github.com/user-attachments/assets/924ce400-c62c-4a04-8150-c223ec4f55ab" />
+
+
 
 ## d) Nora CrackMe: Compile to binaries Tindall 2023: https://github.com/NoraCodes/crackmes
  
@@ -98,6 +122,8 @@ Tero Karvinen Application Hacking: https://terokarvinen.com/application-hacking/
 Hammond 2022: https://www.youtube.com/watch?v=oTD_ki86c9I
 
 Eagly and Nancy 2020: https://learning.oreilly.com/library/view/the-ghidra-book/9781098125684/xhtml/ch02.xhtml#ch02lev29
+
+Reverse Engineering for Beginner: https://medium.com/@anandrishav2228/reverse-engineering-for-beginner-0bf9b20542f7
 
 Tindall 2023: https://github.com/NoraCodes/crackmes
 
