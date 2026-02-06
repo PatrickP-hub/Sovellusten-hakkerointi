@@ -42,12 +42,21 @@ Sitten purin paketin `unzip ghidra*.zip`
 
 Tämän jälkeen avasin Ghidran `./ghidraRun` komennolla
 
+<img width="510" height="466" alt="image" src="https://github.com/user-attachments/assets/15167a8c-9546-457b-bd02-3b88caae8261" />
 
-
-
-
+Ghidra oli installoitu ja valmiina käyttöön virtuaalikoneella
 
 ## b) rever-C. Reverse engineer the packd binary to C language with Ghidr
+
+Latasin zip tiedoston tehtävän annon a) osiosta ja aloitin avaamalla uuden projektin Ghidrasta
+
+Valitsin rever-C.gpr, oletin että tämä oli oikea sillä muita ei näkynyt 
+
+<img width="195" height="56" alt="image" src="https://github.com/user-attachments/assets/24386d61-b187-4fab-b862-9d4cad696ef1" />
+
+
+
+
 
 ## c) If backwards. Modify the passtr program's binary
 
