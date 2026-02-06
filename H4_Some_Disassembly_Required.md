@@ -113,13 +113,64 @@ Toimi! ja sitten kokeillaan vielä oikeaa salasanaa:
 
 Tuloste todistaa että nyt väärä salasana toimi ja oikea ei toiminut.
 
-
 ## d) Nora CrackMe: Compile to binaries Tindall 2023: https://github.com/NoraCodes/crackmes
- 
+
+En ollut varma ymmärsinkö oikein pitikö tässä tehtävässä silmäillä vain README.md tiedostoa ja analysoida binäärejä. 
+
+Silmäilin hetken README.md tiedostoa huomasin, että sielä oli tutoriaali: https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/ 
+
+Aloitin tehtävän kloonaamalla githubista tiedostot
+
+<img width="795" height="172" alt="image" src="https://github.com/user-attachments/assets/56cb130e-561b-4fce-be87-d300870c436d" />
+
+Siirryin `cd crackmes` jossa tehtävät sijaitsivat
+
+Varmistin että tiedostot oli vielä ladattu:
+
+<img width="944" height="82" alt="image" src="https://github.com/user-attachments/assets/7b7b482a-9862-4a93-b7f0-de2258352caa" />
+
+ja suoritin komennon  `make crackme01` jotta se kääntyi binääriksi. Oli aika aloittaa tehtävä
+
 ## e) Nora crackme01. Solve the binary.
+
+Kokeilin ajaa ohjelmaa ./crackme01
+
+<img width="543" height="45" alt="image" src="https://github.com/user-attachments/assets/402da43d-4600-478a-a50a-a953f95f2654" />
+
+Tulosteessa "Need exactly one argument"
+
+Tein uuden projektin Ghidraan ja importtasin crackme01 tiedoston sinne. 
+
+Löysin sieltä main kohdasta salasanan, mutta tämä tuntui jotenki liian helpolta että tehtävä olisi tässä.
+
+Ajoin ohjelman `./crackme01.64 password1`
+
+<img width="650" height="45" alt="image" src="https://github.com/user-attachments/assets/6c3142f2-548c-4d5a-a5dc-b7bfe902864a" />
+
+Tämä tulosti salasanan oikeaksi
+
+Nora crackme01e kohdassa kokeilin lähestyä tehtävää stringsien avulla:
+
+<img width="816" height="400" alt="image" src="https://github.com/user-attachments/assets/8381c0d4-dec0-45ce-b888-3c1c296b3384" />
+
+Tästä voisi päätellä että salasana löytyyi mutta salasanassa oli huutomerkki joka näytti vähän oudolta. 
+
+Melkein jo unohdin muuttaa `make crackme01e` komennon avulla siitä toimivan
+
+Sitten kokeilin "./crackme01e.64 "slm!paas.k""
+
+<img width="689" height="46" alt="image" src="https://github.com/user-attachments/assets/b79e87a7-b615-401d-b1d2-d1b619690cda" />
+
+"event not found" tämän jälkeen kokeilin pelkillä normi hipsuilla mitä on myös python kurssilla opetettu
+
+<img width="685" height="43" alt="image" src="https://github.com/user-attachments/assets/b6657d5c-a00e-43ba-9471-45bdde367278" />
+
+Tämähän tehtävä meni yllättävän helposti.
+
 
 ## f) Nora crackme02
 
+ 
 
 ## Lähteet
 
