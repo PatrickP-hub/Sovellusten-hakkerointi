@@ -170,7 +170,58 @@ Tämähän tehtävä meni yllättävän helposti.
 
 ## f) Nora crackme02
 
- 
+Ensimmäiseksi `make crackme02` Sitten importtasin sen Ghidraan ja katsoin decompile kohtaa `main` funktiosta
+
+<img width="477" height="483" alt="image" src="https://github.com/user-attachments/assets/69d31b9e-6527-4ce6-a691-42d5de4b90c0" />
+
+En oikein ollut varma mitä tästä jäi käteen sillä koodia oli enemmän. Rivillä 20 kuitenkin näkyi salasana "password1".
+
+Kokeilin `strings` komennolla terminaalissa näkyisikö siellä vastausta
+
+<img width="336" height="89" alt="image" src="https://github.com/user-attachments/assets/4978372d-037f-42cd-a3a8-b92eb44193f9" />
+
+Sitten kokeilin salasanaa `./crackme02.64 password1` ja hipsuilla myös
+
+<img width="685" height="132" alt="image" src="https://github.com/user-attachments/assets/a49ab995-36b2-4897-ac93-c61728dc965d" />
+
+Ei ollut mikään oikein, sitten menin Ghidraan tarkastelemaan kohtaa `cVar2` kohtaa kaksoisklikkaamalla
+
+Se laittoi suoraan minut oikealle riville tarkastelemaan sisältöä
+
+<img width="980" height="132" alt="image" src="https://github.com/user-attachments/assets/261357a4-bc50-4d66-91b6-6d7ed5b9da00" />
+
+Sitten kokeilin uudelleen terminaalissa
+
+<img width="659" height="182" alt="image" src="https://github.com/user-attachments/assets/69842216-0337-48b6-9306-78f747e45c42" />
+
+Ei silti mikään oikein... Tässä kohdassa ei ollut oikein mitään ajatuksia mitä seuraavaksi voisin tehdä muutakuin lukea noran tiedostoa: https://github.com/NoraCodes/crackmes crackme02 kohdasta
+
+En halunnut vielä luovuttaa, mutta tässäkin oli kulunut niin kauan jo aikaa että kysyin tekoälyltäkin jo neuvoa mitä voisin tehdä. 
+
+Täältä löysin paikan jossa pystyin Decryptoida salasanan esimerkiksi eri arvoilla: https://www.dcode.fr/ascii-shift-cipher
+
+Laitoin salasanan `assword1` löysin +1 arvolla 
+
+<img width="280" height="62" alt="image" src="https://github.com/user-attachments/assets/dde30cc4-cf41-4a74-8846-e6a9b5701367" />
+
+<img width="669" height="54" alt="image" src="https://github.com/user-attachments/assets/ae55e133-6b38-4f62-a873-050df4eedb73" />
+
+Tämä ei kuitenkaan toiminut...
+
+Yritin ymmärtää mitä `cVar2 = 'p'` tarkoittaa tunnin verran ja tajusin että jos laitan vaan `password1` suoraan ASCII siirtoon numerolla 1 saan oikean vastauksen, eli minulta puuttui vain alusta `p` kirjain
+
+<img width="799" height="170" alt="image" src="https://github.com/user-attachments/assets/71e21276-d48b-4c88-951b-b25d7366aac8" />
+
+<img width="693" height="48" alt="image" src="https://github.com/user-attachments/assets/9b94743f-c820-43d9-aa42-1001548d89a2" />
+
+Oikein!
+
+
+
+
+
+
+
 
 ## Lähteet
 
