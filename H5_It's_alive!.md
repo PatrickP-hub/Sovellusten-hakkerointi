@@ -113,8 +113,33 @@ Ensin kloonasin oikean version radare2 työkalusta.
 
 <img width="552" height="113" alt="image" src="https://github.com/user-attachments/assets/a9a80590-a691-4591-a355-b62da1770546" />
 
-Ja sitten avasin tiedoston GNU debuggerilla `r2 ./crackme03.64` ja menin katsomaan tiedostoa.
+Ja sitten avasin tiedoston GNU debuggerilla `r2 ./crackme03.64` ja menin katsomaan tiedostoa. Tämän jälkeen suoritin syvällisen analyysin kirjoittamalla `aaaa` ja sitten listasin löytyneet funktiot automaattisella analysoinnilla `afl` komennolla
 
+<img width="436" height="252" alt="image" src="https://github.com/user-attachments/assets/1037f558-46d5-4118-b748-c1fc341313c6" />
+
+Tehtävän ohjeissa luki, että kiinnostavat osiot ovat vain "main" sekä "check_pw". Joten toka vikalta riviltä löysin "main" funktion johon siirryin `s main` komennolla. Sitten avasin graafisen näkymän `VV`komennolla.
+
+<img width="545" height="431" alt="image" src="https://github.com/user-attachments/assets/1031bbd3-543c-4a3a-a3ac-cb650060f3f8" />
+
+Tämä oli aika hurjan näköinen vaikka tässä oli vain osa graafisesta näkymästä, vietin aikaa hetken analysoidessani tätä tiedostoa ja luin lisää ohjeita. En oikein osannut edes navigoida kunnolla r2 työkalussa ja kun kaikki oli niin uutta. 
+
+Minun piti löytää palikka mikä tulostaa failure messagen. Uskoisin että ne on nämä kaksi blockkia:
+
+<img width="495" height="129" alt="image" src="https://github.com/user-attachments/assets/0d9897af-c08d-42b3-9b85-8bba21c496c5" />
+
+Takistin että cmp edi, 2 koska se tarkistaa onko ohjelmalle argumentti. Silloin hyppy onnistuu.
+
+Nyt opin jo vähän mitä eri väriset viivat tarkoittavat 
+
+- f = false
+- t = true
+- v = reitti jota ohjelma kulkee
+
+Tehtävänannossa `repne scasb` käskyä ei kuitenkaan ohjelmassa löydy joten olettaisin että ohjelma siirtyy suoraan `sym.check_pw` funktiolle kunhan argumenttien määrä on 2. Tämä kuitenkin oli vain oletusta ja mistään en ollut varma tässä kohtaa, mutta yritin kuitenkin.
+
+<img width="585" height="108" alt="image" src="https://github.com/user-attachments/assets/841a8104-1894-4e39-885a-f15844b62e36" />
+
+Sitten 
 
 
 
@@ -127,3 +152,5 @@ Application Hacking 2026: https://terokarvinen.com/application-hacking/#aikataul
 Tindall 2023: https://github.com/NoraCodes/crackmes
 
 Gemini 3: Promptina: "Ohjelma antoi signal SIGSEGV, Segmentation fault ja koodissa bad_message = NULL; antaa ensimmäisen breakpointin, miten voin korjata ongelman?"
+
+Tindall 2023: https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/
