@@ -49,6 +49,16 @@ Toimihan se kun vähän potkaisi liikkeelle!
 
 ## b) Lab2. Find out the password and flag + write a report on how it opened
 
+Aloitin liikkeelle unzippaamalla lab2 tiedoston `unzip lab2.zip` , ja sitten siirryin tiedostoon `cd passtr/`
+
+Kokeilin alkuun vain runnaamalla passtr tiedoston selvittää lipun mutta sehän ei onnistunut niin helpolla vaan tulosteeksi tuli "What's the password?"
+
+<img width="614" height="90" alt="image" src="https://github.com/user-attachments/assets/b2e2ea0b-8c3c-4f2a-a391-f00b759683a3" />
+
+Menin takaisin `gdb ./passtr` ja katsoin tiedostoa list komennolla ja löysin heti salasanan ja lipun riviltä 13?
+
+<img width="610" height="53" alt="image" src="https://github.com/user-attachments/assets/234d8792-f61a-49b4-8fa3-59ad4c1ab734" />
+
 ## c) Lab3. Try Nora Crackmes exercises tasks 3 and 4
 
 
@@ -57,3 +67,5 @@ Toimihan se kun vähän potkaisi liikkeelle!
 Application Hacking 2026: https://terokarvinen.com/application-hacking/#aikataulu
 
 Tindall 2023: https://github.com/NoraCodes/crackmes
+
+Gemini 3: Promptina: "Ohjelma antoi signal SIGSEGV, Segmentation fault ja koodissa bad_message = NULL; antaa ensimmäisen breakpointin, miten voin korjata ongelman?"
