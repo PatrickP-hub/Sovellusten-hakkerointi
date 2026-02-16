@@ -135,7 +135,7 @@ Nyt opin jo vähän mitä eri väriset viivat tarkoittavat
 - t = true
 - v = reitti jota ohjelma kulkee
 
-Tehtävänannossa `repne scasb` käskyä ei kuitenkaan ohjelmassa löydy joten olettaisin että ohjelma siirtyy suoraan `sym.check_pw` funktiolle kunhan argumenttien määrä on 2. Tämä kuitenkin oli vain oletusta ja mistään en ollut varma tässä kohtaa, mutta yritin kuitenkin.
+Tehtävänannossa `repne scasb` käskyä ei kuitenkaan ohjelmassa löydy joten olettaisin että ohjelma siirtyy suoraan `sym.check_pw` funktiolle kunhan argumenttien määrä on 2. Tämä kuitenkin oli vain oletusta ja mistään en ollut varma tässä kohtaa, mutta yritin kuitenkin. Tähän kohtaan annoin komennon `pd 30 @ main` eli r2 työkalu printtaa ja disassemblaa main funktiosta seuraavat 30käskyä.
 
 <img width="585" height="108" alt="image" src="https://github.com/user-attachments/assets/841a8104-1894-4e39-885a-f15844b62e36" />
 
@@ -159,7 +159,15 @@ Kokeilin tätä nDoEiA salasanaa:
 
 <img width="560" height="40" alt="image" src="https://github.com/user-attachments/assets/d2762660-8df8-4b00-9d02-fa25a2ce01cc" />
 
-Jes toimi! Tämä oli samalla tuskallisin tehtävä varmaan tähän asti tällä kurssilla mutta myös palkitsevin tehtävä myös. 
+Jes toimi! Tämä oli samalla tuskallisin tehtävä varmaan tähän asti tällä kurssilla mutta myös palkitsevin tehtävä myös, onneksi tehtävänannossa annettiin hyviä ohjeita ja niistä oli hyötyä. 
+
+### crackme04.c
+
+Luin tehtävänantoa ja salasanan ratkaisun vaatimuksina ovat 16-merkkinen salasana joissa käytetään `ecx` ja `esi` rekistereitä. Tämä vaikutti alustavasti erityisen haastavalta tehtävältä äsköisen tehtävän jälkeen. 
+
+Sitten aloitin tehtävän `make crackme04` ja `r2 ./crackme04.64` -> `aaaa` `afl` `s main` ja sitten katsoin eka `pdf`
+
+
 
 
 ## Lähteet
