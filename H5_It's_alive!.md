@@ -179,7 +179,7 @@ Tämä tarkoittaa siis että se olisi 15 `n` kirjainta ja 1 `p` kirjain. Kokeill
 
 <img width="507" height="33" alt="image" src="https://github.com/user-attachments/assets/08e17e17-9aab-473c-9b6a-435de831be7f" />
 
-Toimi! Tämä tehtävä oli minusta simppelimpi kuin edeltävä tehtävä ja tämä oli myös omalla tavalla kiva ja opettavainen. Tehtävien tekemiseen meni taas kokonainen päivä, mutta mitäs muutakaan sitä olisi tehnytkään kuin mukavia harjoituksia joissa oppi paljon uutta :-)
+Toimi! Tämä tehtävä oli minusta simppelimpi kuin edeltävä tehtävä ja tämä oli myös omalla tavalla kiva ja opettavainen. Tehtävien tekemiseen meni taas kokonainen päivä, mutta mitäs muutakaan sitä olisi tehnytkään kuin mukavia harjoituksia joissa oppi paljon uutta :-) 
 
 ## Lähteet
 
