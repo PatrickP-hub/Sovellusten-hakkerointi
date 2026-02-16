@@ -149,6 +149,8 @@ Sitten oli aika laskea salasana Little-Endian järjestyksessä seki niiden merki
 
 <img width="431" height="183" alt="image" src="https://github.com/user-attachments/assets/160c2379-293e-406f-97d7-f199e528ed5b" />
 
+Tein käännökset täällä sivustolla: https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')&input=NmUgNDQgNmYgNDUgNjkgNDE
+
 Ensimmäiseksi käänsin hexaan ja sitten lisäsin arvot +2 +3 +2 +3 +3 +5 +0 jokaiseen hexaan ja hexasta ASCII
 
 <img width="418" height="173" alt="image" src="https://github.com/user-attachments/assets/0d4bf52a-93a5-406c-b09d-c848b8b0256c" />
@@ -158,7 +160,6 @@ Kokeilin tätä nDoEiA salasanaa:
 <img width="560" height="40" alt="image" src="https://github.com/user-attachments/assets/d2762660-8df8-4b00-9d02-fa25a2ce01cc" />
 
 Jes toimi! Tämä oli samalla tuskallisin tehtävä varmaan tähän asti tällä kurssilla mutta myös palkitsevin tehtävä myös. 
-
 
 
 ## Lähteet
