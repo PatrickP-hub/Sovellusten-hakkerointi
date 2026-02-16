@@ -55,11 +55,48 @@ Kokeilin alkuun vain runnaamalla passtr tiedoston selvittää lipun mutta sehän
 
 <img width="614" height="90" alt="image" src="https://github.com/user-attachments/assets/b2e2ea0b-8c3c-4f2a-a391-f00b759683a3" />
 
-Menin takaisin `gdb ./passtr` ja katsoin tiedostoa list komennolla ja löysin heti salasanan ja lipun riviltä 13?
+Menin takaisin `gdb ./passtr` ja katsoin tiedostoa list komennolla ja löysin heti salasanan ja lipun riviltä 12 ja 13?
 
-<img width="610" height="53" alt="image" src="https://github.com/user-attachments/assets/234d8792-f61a-49b4-8fa3-59ad4c1ab734" />
+<img width="614" height="400" alt="image" src="https://github.com/user-attachments/assets/6a1bfefc-c70e-42ce-89af-326d03bd7e6f" />
+
+Tämä tehtävä ainakin opetti sen ettei luottamuksellista tietoa saa jättää selväkielisenä lähdekoodiin, sillä ne löytyvät hetkessä. 
+
+Sitten katsoin enemmän lab2.zip kansiota ja löysin sieltä passtr2o kohdan joka pitäisi myös selvittää. 
+
+Menin `gdb ./passtr2o` ja yritin listata koodia mutta se näytti että "no executable file now" ja "no symbol file now", kokeilin `info functions`
+
+<img width="433" height="375" alt="image" src="https://github.com/user-attachments/assets/01db834d-a6b9-4beb-b278-793a196b0eb6" />
+
+Sain näkyviin kaikki passtr2o funktiot ja siellähän näkyi mielenkiintoiset "check password" tai "main" funktiot
+
+Sitten GDB cheatsheetin avulla katoin miten disassembloida funktio ja löysin `disassemble check_password`
+
+<img width="481" height="89" alt="image" src="https://github.com/user-attachments/assets/f82c506d-4fa0-4a5b-8a4e-df5354e51572" />
+
+Tämä taisi olla hämäys koska +0 palauttaa arvon nolla.
+
+Kokeilin vielä muita funktioita samalla systeemillä. Silmäilin todella kauan main funktiota ja sen sisältöä ja muistan joltain tunnilta että kohdat "call" voivat olla hyviä kohtia löytää salaisia tietoja. 
+
+<img width="607" height="669" alt="image" src="https://github.com/user-attachments/assets/0c8bdb51-9e12-4a46-b674-dd91364d1b18" />
+
+Kokeilin pysähtyä `break *main+123` kohtaan ensimmäiseksi ja sitten `run` sitten tämä kysyi salasanaa ja kokeilin vain jotain. Tämän jälkeen GNU debuggeri alkoi breakpointin kohtaan main () funktiota
+
+<img width="609" height="273" alt="image" src="https://github.com/user-attachments/assets/598748c7-338e-49ea-bf6a-d55d2831b7e6" />
+
+Kysyin tekoälyltä tässä vaiheessa vähän neuvoa että miten voisin tutkia muistia funktion sisällä ja se antoi että voin `x/s $rsp` komennolla ettiä tietoa tietyn main funktion sisällä gnu debuggerissa.
+
+<img width="272" height="36" alt="image" src="https://github.com/user-attachments/assets/99958e15-faca-4908-a5f0-2a79eb2b291a" />
+
+Kokeilin toimiiko tämä, mutta eihän se ollut oikein "sorry, no bonus"
+
+<img width="575" height="73" alt="image" src="https://github.com/user-attachments/assets/d14dbd77-4338-4f6a-86e0-4f8497917179" />
+
+Tässä vaiheessa yritin kokeilla löytää tietoa muista funktioista, mutta en millään löytänyt apua mistään ja olin käyttänyt tähän tehtävään monta tuntia jo aikaa. 
+
+
 
 ## c) Lab3. Try Nora Crackmes exercises tasks 3 and 4
+
 
 
 ## Lähteet
