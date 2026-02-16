@@ -91,7 +91,15 @@ Kokeilin toimiiko tämä, mutta eihän se ollut oikein "sorry, no bonus"
 
 <img width="575" height="73" alt="image" src="https://github.com/user-attachments/assets/d14dbd77-4338-4f6a-86e0-4f8497917179" />
 
-Tässä vaiheessa yritin kokeilla löytää tietoa muista funktioista, mutta en millään löytänyt apua mistään ja olin käyttänyt tähän tehtävään monta tuntia jo aikaa. 
+Tässä vaiheessa yritin kokeilla löytää tietoa muista funktioista, mutta en millään löytänyt apua mistään ja olin käyttänyt tähän tehtävään monta tuntia jo aikaa. Kysyin taas tekoälyltä apua, jotta voisin päästä eteenpäin tehtävässä.
+
+Huomasin että main funkiossa kohta `main+133 %eax` on niin sanotusti rekisteri joka hyppää suoraan tulosteeseen "sorry no bonus" 
+
+Sain vinkkinä että (program counter) eli `$pc`rekisterin avulla voin pakottaa ohjelman hyppäämään suoraan tarkistuslogiikan ohi, joten kokeilin `set $pc = *main+137`
+
+<img width="612" height="106" alt="image" src="https://github.com/user-attachments/assets/98a1aed9-ef13-456c-8e0b-99ce2a5ed1ce" />
+
+Sain lipun, mutta salasana vielä puuttui...
 
 
 
