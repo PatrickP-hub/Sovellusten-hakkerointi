@@ -135,11 +135,11 @@ Nyt opin jo vähän mitä eri väriset viivat tarkoittavat
 - t = true
 - v = reitti jota ohjelma kulkee
 
-Tehtävänannossa `repne scasb` käskyä ei kuitenkaan ohjelmassa löydy joten olettaisin että ohjelma siirtyy suoraan `sym.check_pw` funktiolle kunhan argumenttien määrä on 2. Tämä kuitenkin oli vain oletusta ja mistään en ollut varma tässä kohtaa, mutta yritin kuitenkin. Tähän kohtaan annoin komennon `pd 30 @ main` eli r2 työkalu printtaa ja disassemblaa main funktiosta seuraavat 30käskyä. 
+Tehtävänannossa `repne scasb` käskyä ei kuitenkaan ohjelmassa löydy joten olettaisin että ohjelma siirtyy suoraan `sym.check_pw` funktiolle kunhan argumenttien määrä on 2. Tämä kuitenkin oli vain oletusta ja mistään en ollut varma tässä kohtaa, mutta yritin kuitenkin.
 
 <img width="585" height="108" alt="image" src="https://github.com/user-attachments/assets/841a8104-1894-4e39-885a-f15844b62e36" />
 
-Funktiossa näkyi että se ottaa, `arg` muuttujista jonka sitten selvitin suoraan koodista mistä sain heksa tiedot muistiin.
+Funktiossa näkyi että se ottaa, `arg` muuttujista jonka sitten selvitin suoraan koodista mistä sain heksa tiedot muistiin komennolla `pd 30 @ main` eli r2 työkalu printtaa ja disassemblaa main funktiosta seuraavat 30käskyä.
 
 Sieltä löysin `lAmB` , `BdA` ja 0x3020302 mikä on luettuna Little-Endianina oikealta vasemmalle 02, 03, 02, 03 sekä 0x503 missä tavut ovat 03 ja 05 
 
@@ -165,10 +165,21 @@ Jes toimi! Tämä oli samalla tuskallisin tehtävä varmaan tähän asti tällä
 
 Luin tehtävänantoa ja salasanan ratkaisun vaatimuksina ovat 16-merkkinen salasana joissa käytetään `ecx` ja `esi` rekistereitä. Tämä vaikutti alustavasti erityisen haastavalta tehtävältä äsköisen tehtävän jälkeen. 
 
-Sitten aloitin tehtävän `make crackme04` ja `r2 ./crackme04.64` -> `aaaa` `afl` `s main` ja sitten katsoin eka `pdf`
+Sitten aloitin tehtävän `make crackme04` ja `r2 ./crackme04.64` -> `aaaa` `afl` `s main` ja sitten katsoin eka `pdf`. Yritin etsiä koodista kohtia `ecx` ja `esi` mitä tehtävänannossa pyydettiin etsimään.
 
+<img width="973" height="120" alt="image" src="https://github.com/user-attachments/assets/78cbd07b-1897-4cf2-a5ab-9376c5c635f4" />
 
+Löysin juuri nämä kohdat mitkä vahvistaa pituuden `ecx` : 0x10 (tarkoittaa heksatavuna kymmenjärjestelmässä numeroa 16)
 
+Sekä summa mikä pitää saavuttaa `esi` 0x6e2 : 1762 (kertoo vaaditun suoraan summan)
+
+Tällöin jos luvun 1762 jaetaan 16 eli salasanan merkkien avulla ei saada tasalukua vaan numero 110,125. Kuten tehtävänannossa sanotaan että kirjain `n` on luvusta 110. Eli 16*110=1760 josta jäljelle jää numero 2. ASCII-koodissa kaksi askelta seuraava on siis `p`. 
+
+Tämä tarkoittaa siis että se olisi 15 `n` kirjainta ja 1 `p` kirjain. Kokeillaan:
+
+<img width="507" height="33" alt="image" src="https://github.com/user-attachments/assets/08e17e17-9aab-473c-9b6a-435de831be7f" />
+
+Toimi! Tämä tehtävä oli minusta simppelimpi kuin edeltävä tehtävä ja tämä oli myös omalla tavalla kiva ja opettavainen. Tehtävien tekemiseen meni taas kokonainen päivä, mutta mitäs muutakaan sitä olisi tehnytkään kuin mukavia harjoituksia joissa oppi paljon uutta :-)
 
 ## Lähteet
 
