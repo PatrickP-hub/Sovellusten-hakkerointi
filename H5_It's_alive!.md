@@ -139,9 +139,25 @@ Tehtävänannossa `repne scasb` käskyä ei kuitenkaan ohjelmassa löydy joten o
 
 <img width="585" height="108" alt="image" src="https://github.com/user-attachments/assets/841a8104-1894-4e39-885a-f15844b62e36" />
 
-Sitten 
+Funktiossa näkyi että se ottaa, `arg` muuttujista jonka sitten selvitin suoraan koodista mistä sain heksa tiedot muistiin.
 
+Sieltä löysin `lAmB` , `BdA` ja 0x3020302 mikä on luettuna Little-Endianina oikealta vasemmalle 02, 03, 02, 03 sekä 0x503 missä tavut ovat 03 ja 05 
 
+<img width="930" height="112" alt="image" src="https://github.com/user-attachments/assets/8b16ff40-4733-44f9-a542-4ac64a5697e3" />
+
+Sitten oli aika laskea salasana Little-Endian järjestyksessä seki niiden merkit ASCII taulukossa, sekä `check_pw` funktiossa ajo tapahtuu vain 6 merkin avulla joten salasanassa on 6 merkkiä.
+
+<img width="431" height="183" alt="image" src="https://github.com/user-attachments/assets/160c2379-293e-406f-97d7-f199e528ed5b" />
+
+Ensimmäiseksi käänsin hexaan ja sitten lisäsin arvot +2 +3 +2 +3 +3 +5 +0 jokaiseen hexaan ja hexasta ASCII
+
+<img width="418" height="173" alt="image" src="https://github.com/user-attachments/assets/0d4bf52a-93a5-406c-b09d-c848b8b0256c" />
+
+Kokeilin tätä nDoEiA salasanaa:
+
+<img width="560" height="40" alt="image" src="https://github.com/user-attachments/assets/d2762660-8df8-4b00-9d02-fa25a2ce01cc" />
+
+Jes toimi! Tämä oli samalla tuskallisin tehtävä varmaan tähän asti tällä kurssilla mutta myös palkitsevin tehtävä myös. 
 
 
 
