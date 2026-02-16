@@ -101,9 +101,22 @@ Sain vinkkinä että (program counter) eli `$pc`rekisterin avulla voin pakottaa 
 
 Sain lipun, mutta salasana vielä puuttui...
 
-
-
 ## c) Lab3. Try Nora Crackmes exercises tasks 3 and 4
+
+Aloitin tehtävän etsimällä oikeat tehtävät ja sitten kun olin oikeassa hakemistossa niin komennolla `make crackme03` tein tiedostosta luettavan. 
+
+### crackme03.c
+
+Tutustuin tehtävään ja katsoin tehtävänantoa crackme03.c kohdasta https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/ sivustolla. Tässä kohdassa mainittiin että tehtävä tulisi olemaan vaikeampi kuin edelliset tehtävät. Tässä myös mainittiin heti alussa että siinä vaaditaan "r2" työkalua mikä tarkoittaa random data recovery työkalua.
+
+Ensin kloonasin oikean version radare2 työkalusta.
+
+<img width="552" height="113" alt="image" src="https://github.com/user-attachments/assets/a9a80590-a691-4591-a355-b62da1770546" />
+
+Ja sitten avasin tiedoston GNU debuggerilla `r2 ./crackme03.64` ja menin katsomaan tiedostoa.
+
+
+
 
 
 
