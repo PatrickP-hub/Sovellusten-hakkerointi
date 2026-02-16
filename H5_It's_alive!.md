@@ -37,6 +37,16 @@ Aloitin uudelleen ajamaan ohjelman ja sain rivillä 7 segmentation fault
 
 Tähän jouduin käyttämään tekoälyä, sillä minulla ei ollut mitään ideaa, miten voisin koodia alkaa muuttamaan että ongelma ratkeisi. Promptina: "Ohjelma antoi signal SIGSEGV, Segmentation fault ja koodissa bad_message = NULL; antaa ensimmäisen breakpointin, miten voin korjata ongelman?"
 
+Olin kuulemma löytänyt juuri sen kohdan, jossa ongelma syntyy. Eli ohjelma yrittää lukea muistia osoitteesta, joka on NULL(0) mutta muuttujan ei kuuluisi olla tyhjä.
+
+<img width="430" height="362" alt="image" src="https://github.com/user-attachments/assets/b2b97dea-0d04-47bc-88fd-c87babbf310b" />
+
+Annoin bad_messagelle muuttujan "Korjaus" ja testasin uudelleen. Sain kuitenkin saman virheen joten yritin vielä korjata tilannetta. Kokeilin päivittää `g++ -g gdb_example1.c -o kokeilu` ja ajoin sen uudelleen `gdb ./kokeilu` ja `run`
+
+<img width="610" height="181" alt="image" src="https://github.com/user-attachments/assets/88165504-1f54-4697-ad63-92a5c362a3ed" />
+
+Toimihan se kun vähän potkaisi liikkeelle!
+
 ## b) Lab2. Find out the password and flag + write a report on how it opened
 
 ## c) Lab3. Try Nora Crackmes exercises tasks 3 and 4
