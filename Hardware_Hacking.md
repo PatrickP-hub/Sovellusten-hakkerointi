@@ -136,6 +136,19 @@ Kysyin vielä tekoälyltä mitä nämä eri sovellukset voisivat olla, sain vast
 
 ## 6. analyse and try to open root password
 
+Tein tämän tehtävän myös dump tiedoston avulla ja aloitin menemällä `etc` kansioon, sillä Lari näytti tunnilla, että salasanat voi löytää suoraan `etc/passwd` polusta. Mutta tämä ei tainnut olla niin helppo tehtävä.
+
+<img width="1602" height="86" alt="image" src="https://github.com/user-attachments/assets/0ff90bb2-560b-4e24-a7ad-5cbaa4862acb" />
+
+Kävin katselemassa `bin` osioissa mistä löysin ajettavan `main` tiedoston. Katsoin tiedostoa `strings` komennolla. Tämä tiedosto oli kuitenkin älyttömän suuri, joten aikaa meni silmäilyyn hetken ajan. 
+
+Etsin tarkemmin `strings main | grep -i` "password, admin ja root" 
+
+<img width="1602" height="1430" alt="image" src="https://github.com/user-attachments/assets/a09f7fce-2bdc-40b9-ae23-c7e81cb85e19" />
+
+Kuvasta huomasi ettei salasanaa ei ole suoraan näkyvillä mutta salasana on todennäköisesti tallennettu `hash` muodossa. Katselin tätä koodin pätkää jonkun aikaa ja huomasin myös, "change password" ja mietin voisinko vaikka vaihtaa salasanan jos en itse löydä sitä mistään. 
+
+
 ## Lähteet
 
 Sovellusten hakkerointi - 2026 Spring: https://terokarvinen.com/application-hacking/
