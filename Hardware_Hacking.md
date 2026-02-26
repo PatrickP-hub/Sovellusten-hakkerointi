@@ -59,7 +59,7 @@ Tarkistelin tiedoston koodia ja yritin etsiä mikä on tarpeellista tässä teht
 
 <img width="1608" height="184" alt="image" src="https://github.com/user-attachments/assets/94fb13f2-4038-4612-9110-ad030578239f" />
 
-Hetken yritin miettiä miten pääsisin tässä kohdassa eteenpäin, mutta en keksinyt ratkaisua muutakuin tyytyä tekoälyltä apua. "Miten pääsen tarkastelemaan squashfs tiedostojärjestelmää" Tämä antoi tulosteeksi komennon ja selitykset: 
+Hetken yritin miettiä miten pääsisin tässä kohdassa eteenpäin, mutta en keksinyt ratkaisua muutakuin tyytyä tekoälyltä apua. "Miten pääsen tarkastelemaan squashfs tiedostojärjestelmää" Tämä antoi tulosteeksi komennon ja selitykset: Jälkeenpäin huomasin, että ohjeet tälle samalle komennolle löytyi myös osoitteesta: https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/ mitä opettaja oli neuvonut käyttämään tehtävässä.
 
 <img width="1424" height="634" alt="image" src="https://github.com/user-attachments/assets/55bf007e-4cf1-4097-9b2d-3f8de81edc3c" />
 
@@ -73,11 +73,27 @@ Ja siirryin `unsquashfs` komennolla purkamaan `rootfs.sqsh` tiedostoa.
 
 Tämän jälkeen katsoin mitä se sisälsi `ls` komennolla
 
-<img width="799" height="254" alt="image" src="https://github.com/user-attachments/assets/5c7fb20d-79d2-44f2-9849-3a005c9a9855" />
+<img width="1598" height="84" alt="image" src="https://github.com/user-attachments/assets/c37eff92-ca79-4209-87fc-b4a47adc70a5" />
 
+Tehtävässä oli tarkoituksena purkaa root file system ja uskoisin että tämä oli onnistuneesti tehty dump filessä.
 
 
 ## 4. extract rootfs from the image file
+
+Tässä tehtävässä kokeilin edetä samalla tavalla kuin äsköisessä tehtävässä olettaen että oikea tiedosto on `Tapo_C200v5` tiedosto. Katselin taas `binwalk` komennolla ja kokeilin purkaa `jboot_part.bin` tiedoston manuaalisesti komennolla `dd` 
+
+<img width="1598" height="206" alt="image" src="https://github.com/user-attachments/assets/7d20000a-b36f-483f-ad20-8b064291c7b8" />
+
+Tämän jälkeen kokeilin taas `unsquashfs` komennolla purkaa jos se löytäisi sen squashfs-paketista mutta se ei toiminut.
+
+<img width="1598" height="82" alt="image" src="https://github.com/user-attachments/assets/560f10ec-b157-4e02-a33c-16f5a040a3f4" />
+
+Tarkastelin tiedoston `jboot_part.bin`hexakoodia ja yritin etsiä jotain hyödyllistä millä voisi purkaa tiedoston.
+
+<img width="1598" height="1584" alt="image" src="https://github.com/user-attachments/assets/540c2191-c052-480c-825a-3d85d75104c9" />
+
+
+
 
 ## 5. search available applications
 
@@ -94,3 +110,5 @@ Robbins / tp-link-decrypt 2026: https://github.com/robbins/tp-link-decrypt
 Rooting the TP-Link Tapo C200 Rev.5: https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/
 
 How to get The root file system: https://www.youtube.com/watch?v=-AYmTMILsM8
+
+Chatgpt prompt: "Miten pääsen tarkastelemaan squashfs tiedostojärjestelmää" 
