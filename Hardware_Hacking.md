@@ -45,11 +45,13 @@ Kokeilin alussa lähteä liikkeelle etsimällä dump tiedostoa. Olin ladannut jo
 
 <img width="1606" height="322" alt="image" src="https://github.com/user-attachments/assets/9cf0c16d-e0ed-442e-a5fa-d617ad2b1b8e" />
 
-Kuten kuvasta näkyy "image id:9" ja image size, tämä taitaa olla se tehtävässä haettava kuva tiedosto. 
-
+Kuten kuvasta näkyy "image id:9" ja image size, tämä taitaa olla se tehtävässä haettava kuva tiedosto. Tässä kuva tiedostossa myös oli mielenkiintoista se, että siinä on `JBOOT` osio joten se voisi viitata laiteohjelmiston käynnistysosaan. Mikä on tärkeä osa firmwarea. Jätin tämän hetkeksi rauhaan ja siirryin tekemään 3 tehtävää. 
 
 ## 3. extract rootfs from the dump file
 
+Latasin `dump` tiedoston ja yritin extractata rootfs. Aloitin `binwalk` komennolla Tapo_C200v3 tiedostoon mikä oli dump tiedosto. Mutta se näytti olevan "tyhjä". `strings` komennolla kuitenkin löysin jotain, joten sen ei pitäisi olla tyhjä. 
+
+Tämän jälkeen aloin etsimään tietoa millä pystyisin purkamaan tiedoston että löytäisin rootfs tietoja.
 
 
 ## 4. extract rootfs from the image file
