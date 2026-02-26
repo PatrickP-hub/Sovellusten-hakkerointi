@@ -49,9 +49,32 @@ Kuten kuvasta näkyy "image id:9" ja image size, tämä taitaa olla se tehtävä
 
 ## 3. extract rootfs from the dump file
 
-Latasin `dump` tiedoston ja yritin extractata rootfs. Aloitin `binwalk` komennolla Tapo_C200v3 tiedostoon mikä oli dump tiedosto. Mutta se näytti olevan "tyhjä". `strings` komennolla kuitenkin löysin jotain, joten sen ei pitäisi olla tyhjä. 
+Latasin `dump` tiedoston ja yritin extractata rootfs. Menin `cd Downloads` kansioon johon dump tiedosto oli ladattu ja sitten kokeilin aloittaa taas komennolla `binwalk` etsimään tietoa dump tiedostosta. 
 
-Tämän jälkeen aloin etsimään tietoa millä pystyisin purkamaan tiedoston että löytäisin rootfs tietoja.
+Löysin videon missä opetettiin samaa asiaa ja tässä tehtävässä käytin sitä työkaluna: https://www.youtube.com/watch?v=-AYmTMILsM8 
+
+<img width="1608" height="1352" alt="image" src="https://github.com/user-attachments/assets/68f2189d-525f-41b2-85ee-58eb7a4f4aa7" />
+
+Tarkistelin tiedoston koodia ja yritin etsiä mikä on tarpeellista tässä tehtävässä ja lopuksi scrollasin ihan alas ja löysin sieltä `squashfs` tiedostojärjestelmän mikä herätti heti kiinnostusta eli se liittyy todennäköisesti jotenkin `rootfs` tiedostossa. 
+
+<img width="1608" height="184" alt="image" src="https://github.com/user-attachments/assets/94fb13f2-4038-4612-9110-ad030578239f" />
+
+Hetken yritin miettiä miten pääsisin tässä kohdassa eteenpäin, mutta en keksinyt ratkaisua muutakuin tyytyä tekoälyltä apua. "Miten pääsen tarkastelemaan squashfs tiedostojärjestelmää" Tämä antoi tulosteeksi komennon ja selitykset: 
+
+<img width="1424" height="634" alt="image" src="https://github.com/user-attachments/assets/55bf007e-4cf1-4097-9b2d-3f8de81edc3c" />
+
+Sitten annoin komennon:
+
+<img width="1608" height="210" alt="image" src="https://github.com/user-attachments/assets/32943a5e-366e-463c-86d8-9f2b297f5cd7" />
+
+Ja siirryin `unsquashfs` komennolla purkamaan `rootfs.sqsh` tiedostoa.
+
+<img width="799" height="254" alt="image" src="https://github.com/user-attachments/assets/66b0b594-8ca0-400e-954f-f556071708da" />
+
+Tämän jälkeen katsoin mitä se sisälsi `ls` komennolla
+
+<img width="799" height="254" alt="image" src="https://github.com/user-attachments/assets/5c7fb20d-79d2-44f2-9849-3a005c9a9855" />
+
 
 
 ## 4. extract rootfs from the image file
@@ -69,3 +92,5 @@ Sovellusten hakkerointi ja haavoittuvuudet - ICI012AS3A-3003: Moodle
 Robbins / tp-link-decrypt 2026: https://github.com/robbins/tp-link-decrypt
 
 Rooting the TP-Link Tapo C200 Rev.5: https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/
+
+How to get The root file system: https://www.youtube.com/watch?v=-AYmTMILsM8
