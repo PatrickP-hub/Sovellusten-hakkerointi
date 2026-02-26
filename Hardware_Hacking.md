@@ -108,6 +108,32 @@ Tästä siis päättelin, että joko rootfs tiedostoa ei ole ollenkaan tässä i
 
 ## 5. search available applications
 
+Aloitin tämän tehtävän menemällä `dump.filen` rootfs järjestelmään koska en onnistunut niin tekemään image tiedoston kanssa. 
+
+cd ~/Downloads/squashfs-root/usr/bin ja sieltä katselin applikaatioita mitä löytäisin suoraan root käyttäjältä. 
+
+<img width="1602" height="94" alt="image" src="https://github.com/user-attachments/assets/327466bc-7fe2-4cdf-b8f0-2a9ddcfd7f63" />
+
+`iperf` = on siis ajettava ohjelma, mikä on käännetty MIPS arkkitehtuurille ja se käyttää uClibc kirjastoa.
+
+<img width="1602" height="122" alt="image" src="https://github.com/user-attachments/assets/7e7a4419-27d0-433d-81b1-36f3bc8927e3" />
+
+`is_cal_real.script` = skripti muttei sovellus sekä `tail` on rikkinäinen symbolinen linkki eli ei ole sovellus.
+
+Sitten katsoin viel `sbin` kansion, jos löytäisin sieltä sovelluksia. 
+
+<img width="1602" height="122" alt="image" src="https://github.com/user-attachments/assets/8f1ce859-b6eb-498a-b09b-1dc545ce038c" />
+
+Löysin sieltä erikoisilla nimellä varustettuja ajettavia tiedostoja kuten: "fatlabel, fsck.fat, hostapd ja mkfs.fat". Menin tarkastelemaan niitä tarkemmin. 
+
+Näissä kaikissa oli `ELF 32-bit LSB executable` MIPS ja dynaamisesti linkitetty eli oletan näiden kaikkien olevan sovelluksia, mitkä ovat käytettävissä. Varmistin vielä käyttöoikeudet `ls -l` komennolla:
+
+<img width="1602" height="320" alt="image" src="https://github.com/user-attachments/assets/c5dc43a9-6676-44e9-a030-0d0adffc7841" />
+
+Kysyin vielä tekoälyltä mitä nämä eri sovellukset voisivat olla, sain vastaukseksi:
+
+<img width="1602" height="542" alt="image" src="https://github.com/user-attachments/assets/ab4eb727-ee26-4b4a-8d30-bd5c5c454c20" />
+
 ## 6. analyse and try to open root password
 
 ## Lähteet
@@ -122,4 +148,4 @@ Rooting the TP-Link Tapo C200 Rev.5: https://quentinkaiser.be/security/2025/07/2
 
 How to get The root file system: https://www.youtube.com/watch?v=-AYmTMILsM8
 
-Chatgpt prompt: "Miten pääsen tarkastelemaan squashfs tiedostojärjestelmää" 
+Chatgpt prompt: "Miten pääsen tarkastelemaan squashfs tiedostojärjestelmää" & "Selitä lyhyesti sovellukset: fatlabel, fsck.fat, hostapd ja mkfs.fat"
