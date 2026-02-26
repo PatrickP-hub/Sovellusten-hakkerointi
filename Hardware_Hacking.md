@@ -164,8 +164,7 @@ Lopuksi vielä etsin tietoa `lib/audio` polusta mihin löysin `main` tiedostossa
 
 <img width="1620" height="92" alt="image" src="https://github.com/user-attachments/assets/3b1eeeb3-9970-4584-9b7e-69a68e3ecc66" />
 
-
-
+Tässä vaiheessa olin jo työstänyt tehtävää koko päivän, joten päätin jättää tehtävän tähän. Vähän kyllä ärsytti ettei salasanaa löytynyt, mutta yritys oli kova. 
 
 
 ## Lähteet
