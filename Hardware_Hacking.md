@@ -152,6 +152,15 @@ Etsin myös tietoa mitkä asiat voisivat liittyä ratkaisemaan salasanan ja löy
 
 En kuitenkaan löytänyt suoraan vastausta salasanaan mutta uskoisin, että MDA sekä SHA voisivat jotenkin liittyä salasanan hajauttamiseen. 
 
+Etsin vielä jos löytäisin vaikka jotain `.json` tiedostoja jossa olisi suoraan vinkkejä salasanaan ja löysin `dsd_convert.json` tiedoston
+
+<img width="1602" height="40" alt="image" src="https://github.com/user-attachments/assets/9f8b7867-3cc3-433a-916d-e5f2202dd795" />
+
+Löysin sieltä salasanoihin liittyen esimerkiksi "changeadminpassword" ja "getP2Psharepassword" mistä voisi olla jotain vinkkiä löytää salasana.
+
+<img width="518" height="314" alt="image" src="https://github.com/user-attachments/assets/3fcfedc1-d226-4fde-9cf7-8cd43e468380" />
+
+
 
 
 ## Lähteet
