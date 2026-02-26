@@ -96,8 +96,11 @@ Hetken kun olin selaillut löysin taas Larin antamasta sivustolta tietoa mennä 
 
 <img width="1598" height="324" alt="image" src="https://github.com/user-attachments/assets/583dfc76-849d-4185-ad39-2d31327bb514" />
 
+Tämän jälkeen pääsin tarkastelemaan `rootfs.bin` tiedostoa `file` komennolla mutta se olikin tyhjä tiedosto: 
 
+<img width="1286" height="88" alt="image" src="https://github.com/user-attachments/assets/d7baef24-8156-4378-90e7-502d6354c211" />
 
+Tästä siis päättelin, että joko rootfs tiedostoa ei ole ollenkaan tässä image tiedostossa tai sit olin etsinyt väärästä paikasta. 
 
 ## 5. search available applications
 
