@@ -88,9 +88,13 @@ Tämän jälkeen kokeilin taas `unsquashfs` komennolla purkaa jos se löytäisi 
 
 <img width="1598" height="82" alt="image" src="https://github.com/user-attachments/assets/560f10ec-b157-4e02-a33c-16f5a040a3f4" />
 
-Tarkastelin tiedoston `jboot_part.bin`hexakoodia ja yritin etsiä jotain hyödyllistä millä voisi purkaa tiedoston.
+Tarkastelin tiedoston `jboot_part.bin` hexakoodia ja yritin etsiä jotain hyödyllistä `strings` komennoilla, mutta tuntui että jumitin vaan paikallaan enkä päässyt eteenpäin. 
 
-<img width="1598" height="1584" alt="image" src="https://github.com/user-attachments/assets/540c2191-c052-480c-825a-3d85d75104c9" />
+Komennolla `ls -lh` katselin tiedostoa josta, tuli selville että tiedosto on vain 241kb eli aika pieni, ollakseen root tiedosto, mutta voi olla silti monivaiheinen paketti. 
+
+Hetken kun olin selaillut löysin taas Larin antamasta sivustolta tietoa mennä eteenpäin tehtävässä. Sivusto siis: https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/
+
+<img width="1598" height="324" alt="image" src="https://github.com/user-attachments/assets/583dfc76-849d-4185-ad39-2d31327bb514" />
 
 
 
