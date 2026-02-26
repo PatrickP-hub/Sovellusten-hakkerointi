@@ -148,6 +148,11 @@ Etsin tarkemmin `strings main | grep -i` "password, admin ja root"
 
 Kuvasta huomasi ettei salasanaa ei ole suoraan näkyvillä mutta salasana on todennäköisesti tallennettu `hash` muodossa. Katselin tätä koodin pätkää jonkun aikaa ja huomasin myös, "change password" ja mietin voisinko vaikka vaihtaa salasanan jos en itse löydä sitä mistään. 
 
+Etsin myös tietoa mitkä asiat voisivat liittyä ratkaisemaan salasanan ja löysin että `MD5` tai `SHA` ovat algoritmeja joista voisi olla apua ratkaisemaan salasana. Katsoin vielä `strings main` komennolla "MD5" ja "SHA" ja analysoin tuloksia.
+
+En kuitenkaan löytänyt suoraan vastausta salasanaan mutta uskoisin, että MDA sekä SHA voisivat jotenkin liittyä salasanan hajauttamiseen. 
+
+
 
 ## Lähteet
 
