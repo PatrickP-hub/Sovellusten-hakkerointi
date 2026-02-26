@@ -92,11 +92,11 @@ Tarkastelin tiedoston `jboot_part.bin` hexakoodia ja yritin etsiä jotain hyödy
 
 Komennolla `ls -lh` katselin tiedostoa josta, tuli selville että tiedosto on vain 241kb eli aika pieni, ollakseen root tiedosto, mutta voi olla silti monivaiheinen paketti. 
 
-Hetken kun olin selaillut löysin taas Larin antamasta sivustolta tietoa mennä eteenpäin tehtävässä. Sivusto siis: https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/
+Hetken kun olin selaillut ja etsinyt vinkkejä tehtävää varten, löysin taas Larin antamalta sivustolta: https://quentinkaiser.be/security/2025/07/25/rooting-tapo-c200/tietoa mennä eteenpäin tehtävässä. 
 
 <img width="1598" height="324" alt="image" src="https://github.com/user-attachments/assets/583dfc76-849d-4185-ad39-2d31327bb514" />
 
-Tässä oli siis komennon jälkeen kaikki mitä kansiosta löytyi:
+Tämän jälkeen huomasin että `ls` komennolla minulle oli ilmestynyt `rootfs_decrypted.bin` tiedosto.
 
 <img width="1550" height="350" alt="image" src="https://github.com/user-attachments/assets/800e887f-0e72-42af-8f58-0734ea5f4c1f" />
 
