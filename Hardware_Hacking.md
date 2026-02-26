@@ -35,19 +35,22 @@ katsoin eka tiedostoa `cat example.jpg` komennolla mutta tiedostosta ei saanut o
 
 <img width="1598" height="428" alt="image" src="https://github.com/user-attachments/assets/69ab8dd7-5834-4706-819b-76a9eba119e5" />
 
-Tästä näkyi jo enemmän kuvan sisältöä, mutta en oikein osannut analysoida kuvasta mitään järkevää. Sitten vielä `binwalk` komennolla kokeilin, ja sain selville että kuva on JPEG tiedosto joka käyttää JFIF standardia. En tiedä oliko tällä tiedolla mitään hyötyä, joten jatkoin analysointia. 
+Tästä näkyi jo enemmän kuvan sisältöä, mutta en oikein osannut analysoida kuvasta mitään järkevää. Sitten vielä `binwalk` komennolla kokeilin, ja sain selville että kuva on JPEG tiedosto joka käyttää JFIF standardia. Kuvasta näkee myös sen että tiedostossa ei ole sisäänrakennettuja koska hexadecimal arvo on `0x0` . Jatkoin analysointia jos vielä löytäisin jotain muuta hyödyllistä. Rupesin miettimään että `strings`komennolla kuitenkin tuli paljon sisältöä, mutta `binwalk` komennolla tiedosto oli kuitenkin "tyhjä" tämä herätti epäilyksiä. 
 
 <img width="651" height="115" alt="image" src="https://github.com/user-attachments/assets/94067d73-a8d5-4b5b-95fa-5c2af4457001" />
 
-Sitten katsoin `view.php` tiedostoa ja siitä olisi voinut päätellä, että tiedosto on Haaga-helian moodlen pääsivulta/kirjautumissivulta 
+En kuitenkaan löytänyt `main` kohtaa stringsistä tai muuta mistä olisi voinut päätellä että ohjelmassa olisi mitään ajettavaa joten jatkoin eteenpäin. 
 
-<img width="1598" height="428" alt="image" src="https://github.com/user-attachments/assets/443481e4-019d-4f1b-bba8-5427fd3b7ae8" />
+Kokeilin alussa lähteä liikkeelle etsimällä dump tiedostoa. Olin ladannut jo sen aluksi mutta sitten kokeilin `binwalk` komennolla Tapo_C200v5 tiedostoa ja tässä sain mielenkiintoista tietoa että olisiko tämä sittenkin se kuva tiedosto mitä äskön yritin etsiä.
 
-Tämän jälkeen kun olin analysoinut tiedostoja ja todennäköisesti oikeaa image tiedostoa jatkoin kohtaan kolme. 
+<img width="1606" height="322" alt="image" src="https://github.com/user-attachments/assets/9cf0c16d-e0ed-442e-a5fa-d617ad2b1b8e" />
 
+Kuten kuvasta näkyy "image id:9" ja image size, tämä taitaa olla se tehtävässä haettava kuva tiedosto. 
 
 
 ## 3. extract rootfs from the dump file
+
+
 
 ## 4. extract rootfs from the image file
 
