@@ -160,6 +160,11 @@ Löysin sieltä salasanoihin liittyen esimerkiksi "changeadminpassword" ja "getP
 
 <img width="518" height="314" alt="image" src="https://github.com/user-attachments/assets/3fcfedc1-d226-4fde-9cf7-8cd43e468380" />
 
+Lopuksi vielä etsin tietoa `lib/audio` polusta mihin löysin `main` tiedostossa olevaa vinkkiä. Mutta sieltäkään ei löytynyt salasanaa...
+
+<img width="1620" height="92" alt="image" src="https://github.com/user-attachments/assets/3b1eeeb3-9970-4584-9b7e-69a68e3ecc66" />
+
+
 
 
 
