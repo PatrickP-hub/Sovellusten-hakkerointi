@@ -45,11 +45,15 @@
 
 ### a) 1. Convert hex to base64.
 
-Varmistin että virtuaaliympäristössäni oli ladattu python sekä micro työkalut tehtävää varten. Sitten tein kansion tehtävälle ja alotin tekemällä `micro hex.py` tiedoston. Sitten tarkastelin tehtävänannon koodia. Lisäsin micro tiedostoon `import base64` joka muuntaa binääridataa tekstimuotoon. Sitten lisäsin stringin jonka kirjoitin koodiin `hex`. 
+Varmistin että virtuaaliympäristössäni oli ladattu python sekä micro työkalut tehtävää varten. Sitten tein kansion tehtävälle ja alotin tekemällä `micro hex.py` tiedoston. Tehtävässä luki että "only use hex and base64 for pretty printing" joten aloitin tutkimalla ensimmäiseksi python3 ohjelmalla `import base64` sekä `dir(base64)` Sieltä löysin apua tehtävää varten. 
+
+<img width="923" height="267" alt="image" src="https://github.com/user-attachments/assets/1d5bef90-6afd-4910-9e0b-3fc80378c3ea" />
+
+Tämän jälkeen lisäsin micro tiedostoon `import base64` joka muuntaa binääridataa tekstimuotoon. Sitten lisäsin stringin jonka kirjoitin koodiin `hex`. 
 
 <img width="802" height="42" alt="image" src="https://github.com/user-attachments/assets/f60a9f3c-5947-411d-a23b-821c1003d915" />
 
-Tämän jälkeen mietin että minun pitää muuttaa heksamerkit tavuiksi. Nimesin muuttujan `bytes`, ja katsoin googlesta tietoa ja löysin että tarvitsen tehtävää varten `binascii` eli binary + ASCII sekä heksan purkaminen raakadataksi `unhexlify` komennolla ja lopuksi muuttuja `(hex)` loppuun. 
+Sitten mietin että minun pitää muuttaa heksamerkit tavuiksi. Nimesin muuttujan `bytes`, ja katsoin googlesta tietoa ja löysin että tarvitsen tehtävää varten `binascii` eli binary + ASCII sekä heksan purkaminen raakadataksi `unhexlify` komennolla ja lopuksi muuttuja `(hex)` loppuun. 
 
 <img width="391" height="42" alt="image" src="https://github.com/user-attachments/assets/e1c96d59-e593-4769-9680-255a4c6de8ae" />
 
