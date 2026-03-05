@@ -1,6 +1,6 @@
 # H7 Uhagre2
 
-### Työympäristö 5.3.2026
+### Työympäristö 5-6.3.2026
 
 - Oracle VirtualBox
 - Linux Debian 13 Trixie
@@ -116,7 +116,7 @@ Aloitin lisäämällä `english(text)` funktioon `def` josta etsin merkkejä `et
 
 <img width="522" height="170" alt="image" src="https://github.com/user-attachments/assets/2b6ad373-a376-464f-a9ed-d96fc364c98d" />
 
-Tästä alkoi minusta tehtävän vaikein osuus pohdin pitkään mitä teen seuraavaksi. Annoin aluksi muuttujat `parastulos`, `voittaja` ja `arvo` joita vertaan tehtävän lopussa. Sitten `for avain in range (256)` eli se etsii kaikki mahdolliset avaimet mitä on 0-255. Ja käytin taas `bytearray()` listaa jolla sain tehtyä samalla tavalla kuin tehtävässä 2.
+Tästä alkoi minusta tehtävän vaikein osuus pohdin pitkään mitä teen seuraavaksi. Annoin aluksi muuttujat `parastulos`, `voittaja` ja `arvo` jotka tallentaa löydökset. Sitten `for avain in range (256)` eli se etsii kaikki mahdolliset avaimet mitä on 0-255. Ja käytin taas `bytearray()` listaa jolla sain tehtyä samalla tavalla kuin tehtävässä 2.
 
 <img width="349" height="217" alt="image" src="https://github.com/user-attachments/assets/67d7377a-75be-48f1-91ee-ca93fae82f5a" />
 
@@ -133,11 +133,21 @@ Ja tässä vielä koko micro tiedosto:
 
 <img width="829" height="799" alt="image" src="https://github.com/user-attachments/assets/605f4918-ded6-4416-b1b2-b7f3a888c47c" />
 
-Tehtävä oli minulle todella vaikea, vaikka opin jo vähän edellisissä tehtävissä ymmärtämään asioita. Vaikka ratkaisin tämän tehtävän siihen meni aikalailla koko päivä aikaa miettiä, eli jos koodauskielen olisi hallinnut paremmin ennen tätä tehtävää olisi siitä ollut todennäköisesti paljon hyötyä tässä tehtävässä.  
+Tehtävä oli minulle todella vaikea, vaikka opin jo vähän edellisissä tehtävissä ymmärtämään asioita. Vaikka ratkaisin tämän tehtävän siihen meni aikalailla koko päivä aikaa miettiä, eli jos koodauskielen olisi hallinnut paremmin ennen tätä tehtävää olisi siitä ollut todennäköisesti paljon hyötyä tässä tehtävässä. 
 
 ### d) 4. Detect single-character XOR.
 
-- 
+Tehtävän annossa kerrottiin että 3. tehtävän koodilla on apua tähän tehtävään joten minulla oli korkeat oletukset tehtävää varten. Alotin lataamalla tiedoston `wget` kansioon ja sitten menin micro editorilla tiedostoon. Käytin 3 tehtävän alussa käytettyä valmista koodia josta poistin vanhan heksakoodin. Tässä vaiheessa editorissa näytti tältä:
+
+<img width="345" height="171" alt="image" src="https://github.com/user-attachments/assets/cd78a100-e009-4fe5-82a1-8dc0b97fe24a" />
+
+Sitten annoin taas muuttujat joihin tallennetaan löydökset `paratulos`, `parasdekoodi` , ja `avainparas`. Sitten toin tiedoston `with open (tiedosto) as file`. Jotta pääsin käymään tekstissä riviä kerrallaan läpi minun piti antaa `for rivi in file` komento. Tämän jälkeen tarvitsin heksamuunnoksen tiedostoon ja tässä vaiheessa en oikein päässyt eteenpäin niin jouduin kysymään apua tekoälyltä virheilmoituksiin. Eli jos oikein ymmärsin funktio yrittää etsiä muuntaa rivi kerrallaan raakadata muotoon ja ohittaa ne rivit joka eivät ole tärkeää koodia.
+
+<img width="550" height="210" alt="image" src="https://github.com/user-attachments/assets/5e96b6cd-e295-4614-8a3d-246ae9066ee2" />
+
+
+
+
 
 ## Lähteet
 
