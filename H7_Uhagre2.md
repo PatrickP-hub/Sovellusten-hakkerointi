@@ -77,7 +77,7 @@ Ja sitten testataan vielä uudelleen:
 
 <img width="693" height="43" alt="image" src="https://github.com/user-attachments/assets/a080de97-141f-421b-81e5-fc7e55829f0d" />
 
-Tämä oli lyhyt ja ymmärrettävä tehtävä joka opetti todella paljon koodista sillä aikasempaa koodailu taustaa ei oikein ole itsellä ollut.
+Tämä oli lyhyt ja ymmärrettävä tehtävä joka opetti todella paljon koodista sillä aikasempaa koodailu taustaa ei oikein ole itsellä ollut. Löysin täältä vielä lisää tietoa tehtävään: https://docs.python.org/3/library/binascii.html
 
 ### b) 2. Fixed XOR.
 
@@ -135,7 +135,7 @@ Ja tässä vielä koko micro tiedosto:
 
 <img width="829" height="799" alt="image" src="https://github.com/user-attachments/assets/605f4918-ded6-4416-b1b2-b7f3a888c47c" />
 
-Tehtävä oli minulle todella vaikea, vaikka opin jo vähän edellisissä tehtävissä ymmärtämään asioita. Vaikka ratkaisin tämän tehtävän siihen meni aikalailla koko päivä aikaa miettiä, eli jos koodauskielen olisi hallinnut paremmin ennen tätä tehtävää olisi siitä ollut todennäköisesti paljon hyötyä tässä tehtävässä. 
+Tehtävä oli minulle todella vaikea, vaikka opin jo vähän edellisissä tehtävissä ymmärtämään asioita. Vaikka ratkaisin tämän tehtävän siihen meni aikalailla koko päivä aikaa miettiä, eli jos koodauskielen olisi hallinnut paremmin ennen tätä tehtävää olisi siitä ollut todennäköisesti paljon hyötyä tässä tehtävässä. Täältä löysin hyvää apua python ohjelmointiin: https://docs.python.org/3/library/stdtypes.html
 
 ### d) 4. Detect single-character XOR.
 
@@ -171,3 +171,7 @@ Karvinen 2024: https://terokarvinen.com/get-started-micro-editor/
 Karvinen 2024: https://terokarvinen.com/getting-started-python-cryptopals/
 
 The cryptopals crypto challenges: https://cryptopals.com/sets/1
+
+Python binascii - Convert between binary and ASCII: https://docs.python.org/3/library/binascii.html
+
+Python Built-in Types: https://docs.python.org/3/library/stdtypes.html
