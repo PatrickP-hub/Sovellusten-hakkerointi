@@ -150,6 +150,11 @@ Tämän jälkeen minulla olikin jo valmiina edellisestä tehtävästä funktio j
 <img width="593" height="339" alt="image" src="https://github.com/user-attachments/assets/134fe3ff-f162-468a-8c34-e60a62958e47" />
 <img width="485" height="55" alt="image" src="https://github.com/user-attachments/assets/13d6838c-e24d-42c5-92f7-3131c3074d93" />
 
+Tässä vielä kuva koko tiedostosta micro editorissa:
+
+<img width="692" height="790" alt="image" src="https://github.com/user-attachments/assets/27557e62-b00a-4723-ac02-9cae634ec24f" />
+
+
 Tätäkin tehtävää säädin todella pitkään mutta verrattuna 3. tehtävään tämä oli melkein samanlainen ainoastaan piti lisätä muutama rivi tekstiä lisää, jotta oikea ratkaisu löytyi. Näihin tehtäviin meni paljon aikaa mutta olivat palkitsevia loppujen lopuksi. 
 
 ## Lähteet
