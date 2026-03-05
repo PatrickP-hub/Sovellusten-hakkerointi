@@ -1,6 +1,6 @@
 # H7 Uhagre2
 
-### Työympäristö
+### Työympäristö 5.3.2026
 
 - Oracle VirtualBox
 - Linux Debian 13 Trixie
@@ -104,17 +104,21 @@ Tässä vielä koko micro tiedoston koodi ja tuloste että sain ratkaistua teht�
 
 Tämä oli paljon haastavampi tehtävä, mutta vinkeistä oli paljon apua enkä olisi ilman niitä kyllä varmaan saanut ratkaistua tehtävää.
 
-
-
-
-
-
-
-
-
 ### c) 3. Single-byte XOR cipher.
 
-- 
+Aloitin taas tehtävän samallailla kuin muut tehtävät eli valitsin micro editorin ja laitoin tiedostoon `import binascii` kirjaston ja heksamerkkijonon. Sitten mietin hetken aikaa että voisiko tämänkin tehtävän aloittaa samalla tavalla kuin ensimmäisen tehtävän eli `cipher = binascii.unhexlify(hex)` cipher siis tässä muuttujan nimi
+
+<img width="827" height="114" alt="image" src="https://github.com/user-attachments/assets/0133018e-4bd0-449b-962e-c9fea3fad527" />
+
+Tässä vaiheessa mietin kauan mitä teen seuraavaksi ja aloin miettimään tunnilla tehtyä tehtävää, missä etsimme eniten toistuvat kirjaimet jostain tietystä lauseesta. Tehtävänannossa kerrotaan "ETAOIN SHRDLU" mikä taitaa viitata yleisimpiin kirjaimiin englannin kielessä. 
+
+Aloitin lisäämällä `english(text)` funktioon `def` josta etsin merkkejä `etaoinshrdlu` eli englannin yleisimpiin kirjaimiin. Sitten lisäsin `tulos = 0` eli laskurin joka aloittaa aina alusta. Sitten laitoin `for kirjain in text.lower()` eli iso sekä pieni kirjain lasketaan ja `if kirjain in kirjaimet` kertoo että jos kyseinen merkki on yleisimpien kirjaimien joukossa se on oikein. Lopuksi `tulos += 1` eli luku lisää yhden jos se löytää kirjaimen. 
+
+<img width="431" height="192" alt="image" src="https://github.com/user-attachments/assets/6420f72f-adf5-4956-a55e-52052ccc2d8c" />
+
+Koska jokainen tav
+
+
 
 ### d) 4. Detect single-character XOR.
 
