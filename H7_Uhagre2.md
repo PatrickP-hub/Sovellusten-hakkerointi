@@ -108,16 +108,28 @@ Tämä oli paljon haastavampi tehtävä, mutta vinkeistä oli paljon apua enkä 
 
 Aloitin taas tehtävän samallailla kuin muut tehtävät eli valitsin micro editorin ja laitoin tiedostoon `import binascii` kirjaston ja heksamerkkijonon. Sitten mietin hetken aikaa että voisiko tämänkin tehtävän aloittaa samalla tavalla kuin ensimmäisen tehtävän eli `cipher = binascii.unhexlify(hex)` cipher siis tässä muuttujan nimi
 
-<img width="827" height="114" alt="image" src="https://github.com/user-attachments/assets/0133018e-4bd0-449b-962e-c9fea3fad527" />
+<img width="863" height="110" alt="image" src="https://github.com/user-attachments/assets/cdd269db-b143-4e11-9a33-4fa6f9dfa54d" />
 
 Tässä vaiheessa mietin kauan mitä teen seuraavaksi ja aloin miettimään tunnilla tehtyä tehtävää, missä etsimme eniten toistuvat kirjaimet jostain tietystä lauseesta. Tehtävänannossa kerrotaan "ETAOIN SHRDLU" mikä taitaa viitata yleisimpiin kirjaimiin englannin kielessä. 
 
 Aloitin lisäämällä `english(text)` funktioon `def` josta etsin merkkejä `etaoinshrdlu` eli englannin yleisimpiin kirjaimiin. Sitten lisäsin `tulos = 0` eli laskurin joka aloittaa aina alusta. Sitten laitoin `for kirjain in text.lower()` eli iso sekä pieni kirjain lasketaan ja `if kirjain in kirjaimet` kertoo että jos kyseinen merkki on yleisimpien kirjaimien joukossa se on oikein. Lopuksi `tulos += 1` eli luku lisää yhden jos se löytää kirjaimen. 
 
-<img width="431" height="192" alt="image" src="https://github.com/user-attachments/assets/6420f72f-adf5-4956-a55e-52052ccc2d8c" />
+<img width="522" height="170" alt="image" src="https://github.com/user-attachments/assets/2b6ad373-a376-464f-a9ed-d96fc364c98d" />
 
-Koska jokainen tav
+Tästä alkoi minusta tehtävän vaikein osuus pohdin pitkään mitä teen seuraavaksi. Annoin aluksi muuttujat `parastulos`, `voittaja` ja `arvo` joita vertaan tehtävän lopussa. Sitten `for avain in range (256)` eli se etsii kaikki mahdolliset avaimet mitä on 0-255. Ja käytin taas `bytearray()` listaa jolla sain tehtyä samalla tavalla kuin tehtävässä 2.
 
+<img width="349" height="217" alt="image" src="https://github.com/user-attachments/assets/67d7377a-75be-48f1-91ee-ca93fae82f5a" />
+
+`teksti = uusi.decode('ascii', errors='ignore')` Tämä tarkoittaa että muuttujalle teksti = annetaan uusi dekoodattu joka muutetaan ASCII stringiksi ja se ohittaa kaikki ei validit ASCII merkit. Sitten annetaan vielä `pisteet = english(teksti)`, mikä kertoo arvion siitä kuinka todennäköisesti teksti on englanninkielistä. 
+
+<img width="586" height="82" alt="image" src="https://github.com/user-attachments/assets/4e075f33-1471-4755-861e-170c5b744c13" />
+
+Lopuksi vertaillaan `if pisteet > parastulos:` eli jos nykyinen avain antaa enemmän englanninkielisiä kirjaimia se päivittyy ja niin eteenpäin. Tämän jälkeen tulostetaan kaksi erillistä `avain` sekä `viesti` jotka tulostaa parhaan avaimen ja dekryptoidun viestin. 
+
+<img width="371" height="165" alt="image" src="https://github.com/user-attachments/assets/9fb41e5d-fa78-4729-9b14-f283ca6e675e" />
+<img width="569" height="58" alt="image" src="https://github.com/user-attachments/assets/102971ca-f509-4874-b766-d19140a82ca9" />
+
+Tehtävä oli minulle todella vaikea, vaikka opin jo vähän edellisissä tehtävissä ymmärtämään asioita. Vaikka ratkaisin tämän tehtävän siihen meni aikalailla koko päivä aikaa miettiä, eli koodauskielen osaamisesta tai ymmärtämisestä olisi ollut paljon hyötyä tässä tehtävässä.  
 
 
 ### d) 4. Detect single-character XOR.
