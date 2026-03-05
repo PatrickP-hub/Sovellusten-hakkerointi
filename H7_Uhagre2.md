@@ -49,11 +49,11 @@ Varmistin että virtuaaliympäristössäni oli ladattu python sekä micro työka
 
 <img width="923" height="267" alt="image" src="https://github.com/user-attachments/assets/1d5bef90-6afd-4910-9e0b-3fc80378c3ea" />
 
-Tämän jälkeen lisäsin micro tiedostoon `import base64` joka muuntaa binääridataa tekstimuotoon. Sitten lisäsin stringin jonka kirjoitin koodiin `hex`. 
+Tämän jälkeen lisäsin micro tiedostoon `import base64` joka muuntaa binääridataa tekstimuotoon. Sitten lisäsin stringin jonka kirjoitin muuttujan `hex`. 
 
 <img width="802" height="42" alt="image" src="https://github.com/user-attachments/assets/f60a9f3c-5947-411d-a23b-821c1003d915" />
 
-Sitten mietin että minun pitää muuttaa heksamerkit tavuiksi. Nimesin muuttujan `bytes`, ja katsoin googlesta tietoa ja löysin että tarvitsen tehtävää varten `binascii` eli binary + ASCII sekä heksan purkaminen raakadataksi `unhexlify` komennolla ja lopuksi muuttuja `(hex)` loppuun. 
+Sitten mietin että minun pitää muuttaa heksamerkit tavuiksi. Nimesin muuttujan `bytes`, ja katsoin googlesta tietoa ja löysin että tarvitsen tehtävää varten `binascii` eli binary + ASCII sekä heksan purkaminen dataksi `unhexlify` komennolla ja lopuksi muuttuja `(hex)` loppuun. 
 
 <img width="391" height="42" alt="image" src="https://github.com/user-attachments/assets/e1c96d59-e593-4769-9680-255a4c6de8ae" />
 
@@ -79,11 +79,34 @@ Ja sitten testataan vielä uudelleen:
 
 Tämä oli lyhyt ja ymmärrettävä tehtävä joka opetti todella paljon koodista sillä aikasempaa koodailu taustaa ei oikein ole itsellä ollut.
 
-
-
 ### b) 2. Fixed XOR.
 
-- 
+Aloitin tehtävän tekemällä uuden micro tiedoston ja tänne lisäsin `import binascii` kirjaston sekä kaksi heksamerkkijonoa tehtävästä.
+
+Sitten ajattelin kokeilla samalla tavalla kuin edellisessä tehtävässä purkaa merkkijonon dataksi `unhexlify` funktiolla.
+
+<img width="504" height="145" alt="image" src="https://github.com/user-attachments/assets/cdc2de5d-e331-451a-a820-2b53f02b87f1" />
+
+Seuraavaksi etsin tietoa miten edetä tehtävässä ja tulin siihen tulokseen että joudun tekemään listan, joka on niin sanotusti optimoitui binääridatalle `bytearray()`. Tämän jälkeen katsoin vinkeistä ohjeita, sillä en päässyt eteenpäin tehtävässä. Sieltä sain vastaukseksi että tarvitsen laskuria `enumerate` jota voin käyttää apuna. Tarvitaan myös indeksi ja tavu `byte1` muuttujasta eli `for i, b in enumerate(byte1)`
+
+<img width="353" height="75" alt="image" src="https://github.com/user-attachments/assets/4b453c86-9384-442d-8a79-6656863ee6c2" />
+
+Sitten vielä tarvitsin toiselle saman mittaisille `byte2` vastaavan tavun indeksillä `i`. Tämän jälkeen jottai sain hyödynnettyä `bytearray()` funktioa laitoin muuttujan `tulos` ja `.append(xor)` mikä lisää xor vastauksen. 
+
+Sitten oli aika taas lopuksi lisätä `print` komennolla `binascii` kirjastosta. Muuttamalla luvun heksapariksi `hexlify` ja muuttuja joka muutetaan `decode()` avulla siistiksi jonoksi. 
+
+<img width="452" height="94" alt="image" src="https://github.com/user-attachments/assets/3e16603c-3a9f-4d5e-801e-14ba22d39332" />
+<img width="562" height="37" alt="image" src="https://github.com/user-attachments/assets/7a189139-55df-43da-9e4e-5827e2e3ada6" />
+
+Tämä oli paljon haastavampi tehtävä, mutta vinkeistä oli paljon apua enkä olisi ilman niitä kyllä varmaan saanut ratkaistua tehtävää.
+
+
+
+
+
+
+
+
 
 ### c) 3. Single-byte XOR cipher.
 
