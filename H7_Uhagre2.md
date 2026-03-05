@@ -143,7 +143,7 @@ Tehtävän annossa kerrottiin että 3. tehtävän koodilla on apua tähän teht�
 
 Sitten annoin taas muuttujat joihin tallennetaan löydökset `paratulos`, `parasdekoodi` , ja `avainparas`. Sitten toin tiedoston `with open (tiedosto) as file`. Jotta pääsin käymään tekstissä riviä kerrallaan läpi minun piti antaa `for rivi in file` komento. Tämän jälkeen tarvitsin heksamuunnoksen tiedostoon ja tässä vaiheessa en oikein päässyt eteenpäin niin jouduin kysymään apua tekoälyltä virheilmoituksiin. Eli jos oikein ymmärsin funktio yrittää etsiä muuntaa rivi kerrallaan raakadata muotoon ja ohittaa ne rivit joka eivät ole tärkeää koodia.
 
-<img width="539" height="211" alt="image" src="https://github.com/user-attachments/assets/4f8a782b-085d-4848-b223-39fe93ecb010" />
+<img width="528" height="218" alt="image" src="https://github.com/user-attachments/assets/5a2fad41-dd1f-4c89-90fe-ed39628d6dae" />
 
 Tämän jälkeen minulla olikin jo valmiina edellisestä tehtävästä funktio joka etsii kaikki mahdolliset avaimet, sekä tallentaa parhaan mahdollisen tuloksen(muuttujan nimiä jouduin vain muuttamaan eri nimisiksi). Ja sitten vielä muokkasin vähä `print` tulostetta. Ja kokeilin sainko loppujen lopuksi oikein.
 
@@ -152,8 +152,7 @@ Tämän jälkeen minulla olikin jo valmiina edellisestä tehtävästä funktio j
 
 Tässä vielä kuva koko tiedostosta micro editorissa:
 
-<img width="692" height="790" alt="image" src="https://github.com/user-attachments/assets/27557e62-b00a-4723-ac02-9cae634ec24f" />
-
+<img width="695" height="801" alt="image" src="https://github.com/user-attachments/assets/a99f3763-f8a0-4c9e-b6e1-b182fcec5205" />
 
 Tätäkin tehtävää säädin todella pitkään mutta verrattuna 3. tehtävään tämä oli melkein samanlainen ainoastaan piti lisätä muutama rivi tekstiä lisää, jotta oikea ratkaisu löytyi. Näihin tehtäviin meni paljon aikaa mutta olivat palkitsevia loppujen lopuksi. 
 
