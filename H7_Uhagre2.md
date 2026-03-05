@@ -120,6 +120,8 @@ Tästä alkoi minusta tehtävän vaikein osuus pohdin pitkään mitä teen seura
 
 <img width="349" height="217" alt="image" src="https://github.com/user-attachments/assets/67d7377a-75be-48f1-91ee-ca93fae82f5a" />
 
+Jotta sain purettua XOR- salauksen komennolla `for b in cipher` jokainen salattu tavu käsitellään `^` merkillä ja suorittaa niin sanotusti "XOR operaation".
+
 `teksti = uusi.decode('ascii', errors='ignore')` Tämä tarkoittaa että muuttujalle teksti = annetaan uusi dekoodattu joka muutetaan ASCII stringiksi ja se ohittaa kaikki ei validit ASCII merkit. Sitten annetaan vielä `pisteet = english(teksti)`, mikä kertoo arvion siitä kuinka todennäköisesti teksti on englanninkielistä. 
 
 <img width="586" height="82" alt="image" src="https://github.com/user-attachments/assets/4e075f33-1471-4755-861e-170c5b744c13" />
