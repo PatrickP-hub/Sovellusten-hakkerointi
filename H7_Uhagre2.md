@@ -96,6 +96,10 @@ Sitten vielä tarvitsin toiselle saman mittaisille `byte2` vastaavan tavun indek
 Sitten oli aika taas lopuksi lisätä `print` komennolla `binascii` kirjastosta. Muuttamalla luvun heksapariksi `hexlify` ja muuttuja joka muutetaan `decode()` avulla siistiksi jonoksi. 
 
 <img width="452" height="94" alt="image" src="https://github.com/user-attachments/assets/3e16603c-3a9f-4d5e-801e-14ba22d39332" />
+
+Tässä vielä koko micro tiedoston koodi ja tuloste että sain ratkaistua tehtävän:
+
+<img width="694" height="387" alt="image" src="https://github.com/user-attachments/assets/2014df37-0bb0-487f-8154-4b9d529d3dbe" />
 <img width="562" height="37" alt="image" src="https://github.com/user-attachments/assets/7a189139-55df-43da-9e4e-5827e2e3ada6" />
 
 Tämä oli paljon haastavampi tehtävä, mutta vinkeistä oli paljon apua enkä olisi ilman niitä kyllä varmaan saanut ratkaistua tehtävää.
