@@ -116,7 +116,7 @@ Aloitin lisäämällä `english(text)` funktioon `def` josta etsin merkkejä `et
 
 <img width="522" height="170" alt="image" src="https://github.com/user-attachments/assets/2b6ad373-a376-464f-a9ed-d96fc364c98d" />
 
-Tästä alkoi minusta tehtävän vaikein osuus pohdin pitkään mitä teen seuraavaksi. Annoin aluksi muuttujat `parastulos`, `voittaja` ja `arvo` jotka tallentaa löydökset. Sitten `for avain in range (256)` eli se etsii kaikki mahdolliset avaimet mitä on 0-255. Ja käytin taas `bytearray()` listaa jolla sain tehtyä samalla tavalla kuin tehtävässä 2.
+Tästä alkoi minusta tehtävän vaikein osuus pohdin pitkään mitä teen seuraavaksi. Annoin aluksi muuttujat `parastulos = -1` -1 varmistaa ettö se on pohjalukema, `voittaja = ""` etsii parhaimmat merkkijonot ja `arvo = 0` jotka tallentaa löydökset kokonaisluvulla. Sitten `for avain in range (256)` eli se etsii kaikki mahdolliset avaimet mitä on 0-255. Ja käytin taas `bytearray()` listaa jolla sain tehtyä samalla tavalla kuin tehtävässä 2.
 
 <img width="349" height="217" alt="image" src="https://github.com/user-attachments/assets/67d7377a-75be-48f1-91ee-ca93fae82f5a" />
 
