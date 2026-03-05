@@ -129,6 +129,10 @@ Lopuksi vertaillaan `if pisteet > parastulos:` eli jos nykyinen avain antaa enem
 <img width="371" height="165" alt="image" src="https://github.com/user-attachments/assets/9fb41e5d-fa78-4729-9b14-f283ca6e675e" />
 <img width="569" height="58" alt="image" src="https://github.com/user-attachments/assets/102971ca-f509-4874-b766-d19140a82ca9" />
 
+Ja tässä vielä koko micro tiedosto:
+
+<img width="829" height="799" alt="image" src="https://github.com/user-attachments/assets/605f4918-ded6-4416-b1b2-b7f3a888c47c" />
+
 Tehtävä oli minulle todella vaikea, vaikka opin jo vähän edellisissä tehtävissä ymmärtämään asioita. Vaikka ratkaisin tämän tehtävän siihen meni aikalailla koko päivä aikaa miettiä, eli jos koodauskielen olisi hallinnut paremmin ennen tätä tehtävää olisi siitä ollut todennäköisesti paljon hyötyä tässä tehtävässä.  
 
 ### d) 4. Detect single-character XOR.
